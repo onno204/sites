@@ -1,0 +1,28 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Keys</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Addons/css/cores.css">
+        <script type="text/javascript" src="Addons/js/JQuery.js"></script>
+        <script type="text/javascript" src="Addons/js/default.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="boxcontainer">
+                <div class="options"><label onclick="nieuwCommand()">nieuw</label><label onclick="saveCommands()">Save</label><label onclick="resetCommands()">Reset</label><label onclick="hide()">Close</label></div>
+                <div class="inputcontainer">
+                    <label class="KeyCommand">Not set</label>
+                    <select class="PossibleCommands">
+                        <option value="deur">Deur</option>
+                        <option value="vergrendel">Vergrendel</option>
+                        <option value="animatie">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select><!--
+                    --><input class="InputCommandArgs" placeholder="argumenten" type="text" value="piza">
+                    <legend class="RemoveInput">x</legend>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

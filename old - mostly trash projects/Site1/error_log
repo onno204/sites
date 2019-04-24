@@ -1,0 +1,20 @@
+[17-Oct-2017 12:47:47 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[17-Oct-2017 12:47:47 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[17-Oct-2017 14:14:34 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[17-Oct-2017 14:14:34 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:56:17 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:56:17 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:56:52 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:56:52 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:59:24 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:59:24 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:59:55 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:59:55 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[23-Oct-2017 13:47:52 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[23-Oct-2017 13:47:52 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[23-Oct-2017 14:01:20 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[23-Oct-2017 14:01:20 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:11:30 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:11:30 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:34 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:34 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27

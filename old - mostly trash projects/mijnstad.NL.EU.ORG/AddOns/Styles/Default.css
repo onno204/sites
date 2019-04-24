@@ -1,0 +1,23 @@
+.container{
+    background-color: aqua;
+    height: 600px;
+    width: 1150px;
+    min-height: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    display: block;
+}.Left{
+    display: inline-block;
+    height: 100%;
+}.Footer{
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1200;
+}

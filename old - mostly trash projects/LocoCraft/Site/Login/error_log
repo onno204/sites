@@ -1,0 +1,11 @@
+[24-Oct-2017 16:11:49 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[24-Oct-2017 16:11:49 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 45
+[24-Oct-2017 16:11:49 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51
+[24-Oct-2017 16:11:52 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[24-Oct-2017 16:11:52 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51
+[24-Oct-2017 16:11:52 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/LocoCraft/Site/Login/login.php on line 18
+[24-Oct-2017 16:11:52 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/Login/login.php on line 24
+[24-Oct-2017 16:11:52 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 26
+[24-Oct-2017 16:11:52 UTC] PHP Notice:  Use of undefined constant get_magic_quotes_gpc - assumed 'get_magic_quotes_gpc' in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 33
+[24-Oct-2017 16:11:52 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 26
+[24-Oct-2017 16:11:52 UTC] PHP Notice:  Use of undefined constant get_magic_quotes_gpc - assumed 'get_magic_quotes_gpc' in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 33

@@ -1,0 +1,164 @@
+body{
+    min-height: 97.6vh;
+    min-width: 97vw;
+}
+.container{
+/*    line-height: 0px;*/
+}
+.closebutton{
+    top: 0%;
+    right: 0%;
+    padding: 10px;
+    position: absolute;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+    border-style: solid; 
+    cursor: pointer;
+    margin: 0px;
+}
+.closebutton:hover{
+    color: red;
+}
+.boxcontainer{
+/*    width: 70vh;*/
+    width: auto;
+    height: 84vh;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+    border-style: solid; 
+    position: absolute;
+    padding-top: 24px;
+    top: 8vh;
+    left: 29%;
+    background-color: rgba(0,0,0,0.2);
+}
+.boxcontainer .options{
+    top: 0%;
+    right: 0%;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 2px;
+    border-style: solid; 
+    cursor: pointer;
+    margin: 0px;
+}
+.boxcontainer .options label{
+    padding: 10px;
+    border-width: 1px;
+    border-color: grey;
+    border-left-style: solid; 
+    border-right-style: solid; 
+    cursor: pointer;
+    margin: 0px;
+}
+
+.boxcontainer .options label:hover{
+    background-color: rgba(255,255,255,0.6)
+}
+.inputcontainer{
+    border-bottom-style: solid;
+    border-color: rgba(150,150,150,0.5);
+    border-width: 1px;
+    padding: 2.4vh;
+    padding-left: 2.5vh;
+    height: 5vh;
+}
+.inputcontainer label{
+    background-color: rgba(255,255,255,0.2);
+    border-color: rgba(0,0,0,0.4);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 1.4vh;
+    color: black;
+    float: left;
+    transition-duration: 0.5s;
+    height: 2.5vh;
+}
+
+.inputcontainer input{
+    border-color: rgba(0,0,0,0.4);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 1.5vh;
+    text-align: left;
+    color: black;
+    width: 25vh;
+    height: 5.5vh;
+    transition-duration: 0.6s;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left-style: none;
+}
+.inputcontainer legend{
+    background-color: rgba(255,0,0,0.1);
+    border-color: rgba(255,0,0,1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    color: rgba(255,0,0,1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -5.45vh;
+    height: .4vh;
+    padding: 4px;
+    padding-bottom: 1.4vh;
+    padding-top: 0px;
+    line-height: 0.9;
+}
+.inputcontainer legend:hover{
+    background-color: rgba(255,0,0,1);
+    color:white;
+}
+select {
+    border:1px solid #ccc;
+    vertical-align:top;
+    height:20px;
+}
+input, select{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.inputcontainer select{
+    border-color: rgba(0,0,0,0.4);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 1.5vh;
+    padding-top: 1vh;
+    text-align: right;
+    color: black;
+    width: 24vh;
+    height: 5.5vh;
+    transition-duration: 0.6s;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-style: none;
+    
+}
+.CmdHover{
+    transition-duration: 0.5s !important;
+    border-color: rgba(255, 41, 12,0.4) !important;
+}
+.CmdFocus{
+    transition-duration: 0.5s !important;
+    border-color: rgba(255, 41, 12,0.5) !important;
+    background-color: rgba(255,255,255,0.5) !important;
+    outline: none !important;
+    outline-offset: 0px !important;
+    border-width: 3px !important;
+    padding-bottom: 0px !important;
+}
+
+

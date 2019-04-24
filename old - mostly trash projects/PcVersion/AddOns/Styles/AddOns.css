@@ -1,0 +1,298 @@
+.SelectedContainer{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkorange;
+    cursor: context-menu;
+    background-size: 100%;
+    background-position: 100% 100%;
+    height: 880px;
+    width: 1665px;
+    overflow: hidden;
+    position: absolute;
+    left: 145px;
+    background-color: brown; 
+}.nothing{
+    position: fixed;
+    top: 10px;
+    left: 165px;
+    background-color: rgba( 0, 0, 0, 0.5);
+}
+
+.Headernav {
+    margin-top: 1px;
+    margin-left: 1px;
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkorange;
+    float: left;
+    padding: 5px;
+    cursor: context-menu;
+    width: 140px;
+    height: 900px;
+    background-color: darkorange;
+    z-index: 1000;
+}.Headerselected{
+    background-color: blue;
+    color: white;
+    height: 32px;
+    text-align: center;
+    font-size: 25px;
+ }.Headerbutton{
+    display: inline-block;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray;
+    padding: 5px ;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: 500;
+    transition-duration: 1s;
+    background-color: darkgray;
+    size: 10px;
+    color: darkblue;
+    width: 80%;
+    height: 25px;
+    text-align: center;
+}.Headerbutton:hover {
+    border-color: lightgray;
+    background-color: green;
+    color: lightblue;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 500;
+    transition-duration: 1s;
+}.Headerbutton:hover a:hover{
+    border-color: lightgray;
+    background-color: red;
+}.HeaderHolder{
+    height: 100%;
+    float: left;
+    width: 100%;
+    font-size: 17px;
+}.Headertitle{
+    position:relative;
+    display:block;
+    background-color: mediumblue;
+    background-image: url("../Pictures/Image.png");
+    background-size: 120px;
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+    border-radius: 200px;
+    border: 4px;
+    border-style: solid;
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: cyan;
+    width: 102px;
+    height: 90px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 12px;
+    transition-duration: 0.7s;
+    transition-delay: 0s;
+    animation-delay: 2s;
+    text-decoration: none;
+    margin-top: 18px;
+}.Headertitle:hover{
+    opacity: 100%;
+    color: chartreuse;
+    background-size: 105px;
+    transition-duration: 0.7s;
+}.HeaderRight{
+    text-align: right;
+    color: aquamarine;
+}.DropdownMenuContent{
+    position: absolute;
+    -webkit-transition: height 1.5s ease-in;
+    margin-left: 6px;
+    margin-top: -40px;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: burlywood;
+    left: 130px;
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    background-color: darkorange;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-duration: 1.5s;
+    padding: 0px;
+    padding-bottom: -10px;
+    text-align: center;
+}.DropdownMenuContent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 1s;
+}.DropdownMenuContent p{
+    color: black;
+    padding: 12px 16px;
+    padding-top: 0px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 1s;
+}.dropdown {
+    position: relative;
+    display: inline-block;
+}.ContentButtons{
+    border-width: 0px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: gray;
+    font-size: 20px;
+}
+
+.DropdownMenuContentSub{
+    text-align: left;
+    position: absolute;
+    -webkit-transition: height 1.5s ease-in;
+    left: 255px;
+    margin-top: -20px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: burlywood;
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    background-color: darkorange;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-duration: 1.5s;
+    padding: 0px;
+    padding-bottom: -10px;
+}.DropdownMenuContentSub a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 1s;
+}.DropdownMenuContentSub p{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition-duration: 1s;
+}.LoginOrRegister{
+    display: block;
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+    font-size: 17px;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    border-radius: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: burlywood;
+    position: absolute;
+    height: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto;
+    top: 4px;
+    text-decoration: none;
+    left: 0px;
+    transition: 1s;
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}.LoginOrRegister:hover {
+    transition: 1s;
+    transition-delay: 0.0s;
+    transition-duration: 1s;
+    border-color: red;
+    color: orange;
+    background-color: rgba( 0, 0, 0, 0.8);
+}.LoginRecht{
+    top: 4px;
+    left: 67px;
+}.Overlay{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, 0.5);
+    z-index: 1000000000;
+    color: white;
+    text-align: center;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}.OverlayText{
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    height: 50vh;
+    width: 50vw;   
+    background-color: rgba( 100, 0, 0, 0.5);
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}.CloseButton{
+    position: fixed;
+    top: 45%;
+    left: 80%;
+    margin-right: 1px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    z-index: 1000000001;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 25px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.ImgOverlay{
+    cursor: wait;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba( 0, 0, 0, 0.6);
+    z-index: 1000000000;
+    color: white;
+    text-align: center;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}.ImgOverlayImg{
+    position: absolute;
+    top: 22%;
+    left: 42%;
+    height: 50vh;
+    width: auto;
+    border-style: none;
+    border-color: red;
+    border-width: 5px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(365deg);}
+}
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(365deg);}
+}
+
+
+
+.hide { display: none; 
+}.show { display: inline-block; 
+}

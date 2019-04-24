@@ -1,0 +1,49 @@
+.IdeasTable{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgba( 144, 144, 144, 1);
+}.IdeasTDTH{
+    border: 1px solid;
+    border-color: rgba( 200, 200, 200, 1);
+    text-align: left;
+    padding: 3px;
+    padding-left: 8px;
+}.IdeasTR:nth-child(even) {
+    background-color: #dddddd;
+}.IdeasContent{
+    padding: 5px;
+}.IdeasaddPW{
+    color: white;
+    padding: 5px;
+    padding-left: 11px;
+    margin-left: 28%;
+    width: 740px;
+    background-color: rgba( 255, 0, 0, 0.5);
+    border-radius: 5px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba( 0, 0, 0, 0.8);
+}.IdeasGeneratorPassword{
+    width: 35px;
+    height: 35px;
+}.IdeasGeneratorInput{
+    width: 270px;
+    height: 25px;
+}.IdeasSmall{
+    color: red;
+    font: 100;
+    width: 100px;
+    cursor: pointer;
+}.IdeasSmallType{
+    width: 300px;
+}.IdeasContainer{
+    background-color: orange;
+    height: 880px;
+}.IdeasOnlySite{
+    color: white;
+    text-align: center;
+    margin: 3px;
+    font-size: 25px;
+}
+

@@ -1,0 +1,10 @@
+[15-Jan-2017 17:40:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'udzotgxc_SiteManager'@'localhost' (using password: YES) in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 12
+[15-Jan-2017 17:40:17 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 21
+[15-Jan-2017 17:40:17 UTC] PHP Warning:  MySQL::First(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 23
+[15-Jan-2017 17:40:17 UTC] PHP Warning:  MySQL::First(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 25
+[15-Jan-2017 17:40:17 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 222
+[15-Jan-2017 17:40:18 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'udzotgxc_SiteManager'@'localhost' (using password: YES) in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 12
+[15-Jan-2017 17:40:18 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 21
+[15-Jan-2017 17:40:18 UTC] PHP Warning:  MySQL::First(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 23
+[15-Jan-2017 17:40:18 UTC] PHP Warning:  MySQL::First(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 25
+[15-Jan-2017 17:40:18 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/onno204nleu/public_html/PcVersion/AddOns/phps/MySQL.php on line 222

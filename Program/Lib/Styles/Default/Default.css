@@ -1,0 +1,330 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+label{
+    color: black;
+    background-color: rgba(150,150,150,0.2);
+    padding: 2px;
+}
+/* Background */
+Body{
+    background-repeat: no-repeat;
+    background:linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,0.1),rgba(255,255,255,0.3),rgba(255,255,255,1)),url(../../../Lib/Pictures/Fck.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-color: rgba(50,0,150,1);
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 52px 5fr 22px;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    margin: 0px;
+}
+main{
+    margin-bottom: 10%;
+    display: none;
+    grid-area: main;
+    
+}
+/*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTod1n8vegPiVi0yCo83Hyip-XO8VqJubHb2O4XjhuH7s92WY*/
+
+/* Nav bar */
+nav{
+    border-color: rgba(80,180,80,1);
+    border-bottom-color: rgba(100,235,100,1);
+    border-style: solid;
+    border-width: 5px;
+    align-self: center;
+    text-align: center;
+    background-color: rgba(80,180,80,1);
+    display: none;
+    padding-top: 8px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3), 0px 10px 10px rgba(0,0,0,0.3);
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+nav a{
+    display: inline;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    background-color: rgba(110,245,110,1);
+    color: rgba(200,0,0,0.7);
+    align-self: center;
+    text-align: center;
+    padding: 6px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 100%;
+}
+nav a:hover{
+    transition-duration: 0.4s;
+    background-color: rgba(255,255,255,1);
+    color: rgba(0,0,200,1);
+    box-shadow: 7px 12px 16px 3px rgba(0,0,0,0.5), 7px 8px 20px 3px rgba(0,0,0,0.3);
+}
+.NavPic{
+    border-radius: 50%;
+    width: auto;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+    transition-duration: 0.4s;
+}
+.NavPic:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6), 10px 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+/* Footer */
+
+FooterWait{
+    position: fixed;
+    z-index: 10;
+    display: block;
+    height: 22px;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.85);
+    cursor: default;
+    text-align: center;
+    display: none;
+}
+FooterWait a {
+    text-decoration: none;
+    color: cyan;
+}
+Footer{
+    height: 101px;
+    width: 100%;
+    position: fixed;
+    bottom: 22px;
+    left: 0px;
+    padding-top: 10px;
+    column-count: 2;
+    background-color: rgba( 0, 0, 0, 0.7);
+    color: white;
+    overflow: auto;
+    z-index: 10;
+    display: none;
+    text-align: center;
+}
+
+
+/* Button */
+.Button{
+    border-color: rgba(0,0,0,0.4);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(110,245,110,1);
+    color: rgba(200,0,0,0.7);
+    align-self: center;
+    text-align: center;
+    padding: 2px;
+    transition-duration: 0.3s;
+    font-weight: bold;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5), 3px 3px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+.Button:hover{
+    transition-duration: 0.2s;
+    background-color: rgba(255,255,255,1);
+    color: rgba(0,0,200,1) !important;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.5), 7px 7px 7px rgba(0,0,0,0.2);
+}
+
+/* Nice On/OFF button */
+.SliderButton{
+    cursor: pointer;
+    display: inline-block;
+    text-align: -webkit-left;
+    transition-duration: 0.4s;
+    background-color: rgba(0,0,0,0);
+    width: 111px;
+    height: 30px;
+}
+.SliderButton input{
+    display: none;
+}
+/* Background */
+.SliderButton div{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4), 4px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgba(150,0,0,1);
+    border-width: 2px;
+    background-color: rgba(255,150,150,1);
+    width: 100%;
+    transition-duration: 0.5s;
+}
+/* Switch */
+.SliderButton div:before{
+    border-style: solid;
+    border-color: rgba(75,75,75,1);
+    border-width: 2px;
+    border-radius: 50px;
+    background-color: rgba(255,0,0,1);
+    width: 50px;
+    height: 18px;; 
+    position: absolute;
+    content: " ";
+    margin-left: 0px;
+    transition-duration: 0.5s;
+}
+/* Switch */
+.SliderButton input:checked + div:before{
+    margin-left: 49px;
+    background-color: rgba(0,255,0,1);
+}
+/* Background */
+.SliderButton input:checked + div{
+    background-color: rgba(150,255,150,1);
+    border-color: rgba(0,150,0,1);
+}
+
+/* Information Bar */
+output{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    border-color: black;
+    border-top-style: solid;
+    border-width: 2px;
+    align-self: center;
+    text-align: center;
+    background-color: #2196F3;
+    box-shadow: 0px -4px 10px rgba(0,0,0,0.3), 0px -8px 10px rgba(0,0,0,0.1);
+    height: 40px;
+    padding-top: 10px;
+    z-index: 1000;
+    left: 0px;
+    display: none;
+}
+
+/* Overlay for anything */
+Overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 99999;
+    display: none;
+    margin: 0px 0px 0px 120vw;
+    overflow: auto;
+}
+
+
+/* Loading Overlay */
+LoadingPage{
+    z-index: 99999999;
+    background-color: rgba(25,25,25,0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+.BlackRound{
+    border-radius: 50%;
+    border-width: 20px;
+    border-style: dotted;
+    border-color: rgba(120, 120, 120, 1) rgba(120, 120, 120, 0.7) rgba(120, 120, 120, 0.5) rgba(120, 120, 120, 0.3);
+    padding: 40px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 39%;
+    left: 41%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Yes or No Overlay */
+YesNo{
+    z-index: 99999999;
+    background-color: rgba(25,25,25,0.3);
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+.YesNoText{
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    width: 35%;
+    background-color: rgba(250,25,25,0.7);
+    padding: 10px;
+    font-weight: bold;
+}
+.YesNoYes{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    width: 10vw;
+}
+.YesNoNo{
+    position: absolute;
+    top: 65%;
+    right: 35%;
+    width: 10vw;
+}
+
+/* Default table Layout */
+.Selectortable {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-spacing: 0px 3px;
+    border-collapse: separate;
+}
+.Selector td, th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    color: rgba(255,255,255,1);
+}
+.Selector tr:nth-child(even) {
+    background-color: rgba( 200, 200, 200, 0.7);
+    color: black;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+}
+.Selector tr{
+    color: white;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+    background-color: rgba( 100, 100, 100, 0.7);
+    text-align: center;
+    transition-duration: 0.8s;
+}
+.Selector a{
+    cursor: pointer;
+    text-decoration: none;
+}

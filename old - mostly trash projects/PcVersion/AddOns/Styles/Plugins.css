@@ -1,0 +1,73 @@
+.PluginsTopper{
+    background-color: aqua;
+    color: deeppink;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    height: 65px;
+    margin-top: 15px;
+    font-size: 50px;
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
+}.PluginsDiscription{
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 3%;
+    text-align: center;
+    width: 45%;
+    height: 70vh;
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-weight: bold;
+}.PluginsDownload{
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 57px;
+    text-align: center;
+    width: 45%;
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    background-color: rgba( 0, 0, 0, 1);
+    color: white;
+    font-size: 60px;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-weight: bold;
+}.PluginsSpecail{
+    opacity: none;
+    font-size: 20px;
+    color: blue;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    text-decoration: underline;
+}.PluginBlockHolder{
+    display: inline-block;
+}.PluginsButton{
+    border: 6px;
+    border-style: solid;
+    border-color: gray;
+    font-size: 30px;
+    padding: 3px;
+    background-color: darkgray;
+    color: darkblue;
+    font-family: Arial;
+    transition-duration: 0.7s;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 3px;
+    float: left; 
+    text-align: center;
+}.PluginsButton:hover{
+    background-color: green;
+    color: lightblue;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: 500;
+    transition-duration: 0.7s;
+}

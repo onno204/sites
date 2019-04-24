@@ -1,0 +1,4663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="JAMPS - Black &amp; Green V2" version="1804">
+	<properties>
+		<templateset><![CDATA[6]]></templateset>
+		<editortheme><![CDATA[mybb.css]]></editortheme>
+		<imgdir><![CDATA[images]]></imgdir>
+		<logo><![CDATA[images/JAMPS-Black-Green-V2-By-XEDE/JAMPSLogo7ByXEDE.png]]></logo>
+		<tablespace><![CDATA[5]]></tablespace>
+		<borderwidth><![CDATA[0]]></borderwidth>
+		<color><![CDATA[]]></color>
+		<disporder><![CDATA[a:7:{s:10:"usercp.css";i:1;s:17:"thread_status.css";i:2;s:16:"star_ratings.css";i:3;s:9:"modcp.css";i:4;s:14:"showthread.css";i:5;s:8:"css3.css";i:6;s:10:"global.css";i:7;}]]></disporder>
+	</properties>
+	<stylesheets>
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1804"><![CDATA[.thread_status {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(images/folders_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.thread_status.dot_folder {
+	background-position: 0 0;
+}
+
+.thread_status.dot_hotfolder {
+	background-position: 0 -20px;
+}
+
+.thread_status.dot_hotlockfolder {
+	background-position: 0 -40px;
+}
+
+.thread_status.dot_lockfolder {
+	background-position: 0 -60px;
+}
+
+.thread_status.dot_newfolder {
+	background-position: 0 -80px;
+}
+
+.thread_status.dot_newhotfolder {
+	background-position: 0 -100px;
+}
+
+.thread_status.dot_newhotlockfolder {
+	background-position: 0 -120px;
+}
+
+.thread_status.dot_newlockfolder {
+	background-position: 0 -140px;
+}
+
+.thread_status.folder {
+	background-position: 0 -160px;
+}
+
+.thread_status.hotfolder {
+	background-position: 0 -180px;
+}
+
+.thread_status.hotlockfolder {
+	background-position: 0 -200px;
+}
+
+.thread_status.lockfolder {
+	background-position: 0 -220px;
+}
+
+.thread_status.movefolder {
+	background-position: 0 -240px;
+}
+
+.thread_status.newfolder {
+	background-position: 0 -260px;
+}
+
+.thread_status.newhotfolder {
+	background-position: 0 -280px;
+}
+
+.thread_status.newhotlockfolder {
+	background-position: 0 -300px;
+}
+
+.thread_status.newlockfolder {
+	background-position: 0 -320px;
+}
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1804"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+	background: url(images/star_rating.png) left -1000px repeat-x;
+	vertical-align: middle;
+}
+
+.star_rating {
+	position: relative;
+	width:80px;
+	height:16px;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+td .star_rating {
+	margin: auto;
+}
+
+.star_rating li {
+	display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+	position: absolute;
+	text-indent: -1000px;
+	height: 16px;
+	line-height: 16px;
+	outline: none;
+	overflow: hidden;
+	border: none;
+	top:0;
+	left:0;
+}
+
+.star_rating_notrated li a:hover {
+	background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+	width:20%;
+	z-index:6;
+}
+
+.star_rating li a.two_stars {
+	width:40%;
+	z-index:5;
+}
+
+.star_rating li a.three_stars {
+	width:60%;
+	z-index:4;
+}
+
+.star_rating li a.four_stars {
+	width:80%;
+	z-index:3;
+}
+
+.star_rating li a.five_stars {
+	width:100%;
+	z-index:2;
+}
+
+.star_rating .current_rating {
+	z-index:1;
+	background-position: left center;
+}
+
+.star_rating_success,
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.inline_rating {
+	background: url(images/star_rating.png) left -1000px repeat-x;
+	float: left;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1804"><![CDATA[.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+	background-image: url(images/usercp_sprite.png);
+	background-repeat: no-repeat;
+}
+.usercp_nav_composepm {
+	background-position: 0 0;
+}
+
+.usercp_nav_pmfolder {
+	background-position: 0 -20px;
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background-position: 0 -40px;
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background-position: 0 -60px;
+}
+
+.usercp_nav_pmtracking {
+	background-position: 0 -80px;
+}
+
+.usercp_nav_pmfolders {
+	background-position: 0 -100px;
+}
+
+.usercp_nav_profile {
+	background-position: 0 -120px;
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background-position: 0 -140px;
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background-position: 0 -160px;
+}
+
+.usercp_nav_username {
+	padding-left: 40px;
+	background-position: 0 -180px;
+}
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background-position: 0 -200px;
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background-position: 0 -220px;
+}
+
+.usercp_nav_options {
+	background-position: 0 -240px;
+}
+
+.usercp_nav_usergroups {
+	background-position: 0 -260px;
+}
+
+.usercp_nav_editlists {
+	background-position: 0 -280px;
+}
+
+.usercp_nav_attachments {
+	background-position: 0 -300px;
+}
+
+.usercp_nav_drafts {
+	background-position: 0 -320px;
+}
+
+.usercp_nav_subscriptions {
+	background-position: 0 -340px;
+}
+
+.usercp_nav_fsubscriptions {
+	background-position: 0 -360px;
+}
+
+.usercp_nav_viewprofile {
+	background-position: 0 -380px;
+}
+
+.usercp_nav_home {
+	background-position: 0 -400px;
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+	margin: 5px;
+	padding: 8px;
+	border:1px solid #CCCCCC;
+}
+
+.pmspace {
+	float: right;
+	margin: -3px 5px;
+}
+
+.pmspace_container {
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 100px;
+	display: inline-block;
+}
+
+.pmspace_used {
+	display: inline-block;
+	color: #fff;
+	margin: -1px;
+}
+
+.pmspace_used.low {
+	border: 1px solid #0c5a01;
+	background: #167203;
+}
+
+.pmspace_used.medium {
+	background: #ff862b;
+	border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+	background: #e73c3c;
+	border: 1px solid #c00;
+}
+
+.pmspace_unused {
+	display: inline-block;
+}
+
+.pmspace_text {
+	padding: 1px 5px;
+	display: inline-block;
+}
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1804"><![CDATA[ul.thread_tools,
+ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li {
+	padding-left: 24px;
+	padding-bottom: 4px;
+	margin-bottom: 3px;
+	font-size: 11px;
+	background-image: url(images/showthread_sprite.png);
+	background-repeat: no-repeat;
+}
+
+ul.thread_tools li.printable {
+	background-position: 0 0;
+}
+
+ul.thread_tools li.sendthread {
+	background-position: 0 -20px;
+}
+
+ul.thread_tools li.subscription_add {
+	background-position: 0 -40px;
+}
+
+ul.thread_tools li.subscription_remove {
+	background-position: 0 -60px;
+}
+
+ul.thread_tools li.poll {
+	background-position: 0 -80px;
+}
+
+.showthread_spinner {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1804"><![CDATA[.modcp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px;
+	background-image: url(images/modcp_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.modcp_nav_home {
+	background-position: 0 0;
+}
+
+.modcp_nav_announcements {
+	background-position: 0 -20px;
+}
+
+.modcp_nav_reports {
+	background-position: 0 -40px;
+}
+
+.modcp_nav_modqueue {
+	background-position: 0 -60px;
+}
+
+.modcp_nav_modlogs {
+	background-position: 0 -80px;
+}
+
+.modcp_nav_editprofile {
+	background-position: 0 -100px;
+}
+
+.modcp_nav_banning {
+	background-position: 0 -120px;
+}
+
+.modcp_nav_warninglogs {
+	background-position: 0 -140px;
+}
+
+.modcp_nav_ipsearch {
+	background-position: 0 -160px;
+}
+
+.modqueue_message {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.modqueue_controls {
+	width: 270px;
+	float: right;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 6px;
+	font-weight: bold;
+}
+
+.modqueue_controls label {
+	margin-right: 8px;
+}
+
+.label_radio_ignore,
+.label_radio_delete,
+.label_radio_approve {
+	font-weight: bold;
+}
+
+.modqueue_meta {
+	color: #444;
+	font-size: 95%;
+	margin-bottom: 8px;
+}
+
+.modqueue_mass {
+	list-style: none;
+	margin: 0;
+	width: 150px;
+	padding: 0;
+}
+
+.modqueue_mass li {
+	margin-bottom: 4px;
+	padding: 0;
+}
+
+.modqueue_mass li a {
+	display: block;
+	padding: 4px;
+	border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+	background: #efefef;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="css3.css" version="1804"><![CDATA[
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="global.css" version="1804"><![CDATA[/* THEME JAMPS - Black & Green V2 By XEDE v1.0 For Mybb 1.8
+	Tema para foros MyBB creado por XEDE:
+	www.JAMPS.com.ar
+	www.JAMPS.org 
+	Licencia CC BY-NC Informacion de la misma:
+	Ingles:
+	http://creativecommons.org/licenses/by-nc/3.0/ 
+	Español:
+	http://creativecommons.org/licenses/by-nc/3.0/deed.es
+	Respetar los creditos de autor
+	Soporte/Support: 
+	http://www.Mybb-Es.com 
+	http://www.JAMPS.com.ar
+	Mas info:
+	JAMPS:
+	http://jamps.com.ar/foro/@XEDE
+	http://jamps.org/
+	http://jamps.net/
+	STEAM:
+	https://steamcommunity.com/id/edexede
+	http://steamcommunity.com/groups/jamps
+	Facebook:
+	http://www.facebook.com/EDEXEDE
+	http://www.facebook.com/JAMPS.com.ar
+	Twitter:
+	http://twitter.com/jampsweb
+	HostWeb:
+	http://www.NunHost.com
+*/
+
+body {
+	color: #333;
+	text-align: left;
+	line-height: 1.4;
+	margin: 0;
+	font-family: Helvetica, Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	overflow-y: scroll;
+	min-height: 750px;
+	background-repeat:repeat-x;
+	min-height: 750px;
+	min-width: 950px;
+	background: #45484d; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #45484d 0%,#000000 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #45484d 0%,#000000 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+}
+
+a:link {
+	color: #008df8;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #008df8;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #008df8;
+	text-decoration: underline;
+}
+
+#container {
+	color: #333;
+	text-align: left;
+	line-height: 1.4;
+	margin: auto;
+	font-family: Helvetica, Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	min-width: 990px;
+	width: 1150px;
+}
+
+.wrapper {
+	min-width: 970px;
+	width: 99%;
+	margin: auto auto;
+}
+
+#content {
+	width: 1128px;
+	padding: 20px 10px;
+	overflow: hidden;
+	color: #FAFAFA;
+	border: 1px solid #00ff19;
+	border-bottom: none;
+	background: #232323;
+	margin: auto auto -1px;
+}
+
+#header ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#header ul.menu li {
+	margin: 0 7px;
+	display: inline;
+}
+
+#header ul.menu li a {
+	padding-left: 20px;
+	background-image: url(images/headerlinks_sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#logo {
+	background: none;
+	width: auto;
+	margin: auto auto auto 20px;
+	float: left;
+	height: 110px;
+	padding: 20px 0px 20px 0px;
+}
+
+#logo ul.top_links {
+	font-weight: bold;
+	text-align: right;
+	margin: -10px 5px 0 0;
+}
+
+#logo ul.top_links a.search {
+	background-position: 0 0;
+}
+
+#logo ul.top_links a.memberlist {
+	background-position: 0 -20px;
+}
+
+#logo ul.top_links a.calendar {
+	background-position: 0 -40px;
+}
+
+#logo ul.top_links a.help {
+	background-position: 0 -60px;
+}
+
+#logo ul.top_links a.portal {
+	background-position: 0 -180px;
+}
+
+#panel .upper a.logout {
+	font-weight: bold;
+	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+#panel .upper a.login,
+#panel .upper a.lost_password {
+	background: url(images/headerlinks_sprite.png) 0 -100px no-repeat;
+	padding-left: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .upper a.register {
+	background: url(images/headerlinks_sprite.png) right -80px no-repeat;
+	padding-right: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+#panel .lower ul.panel_links {
+	float: left;
+}
+
+#panel .lower ul.panel_links a.usercp {
+	background-position: 0 -120px;
+}
+
+#panel .lower ul.panel_links a.modcp {
+	background-position: 0 -140px;
+}
+
+#panel .lower ul.panel_links a.admincp {
+	background-position: 0 -160px;
+}
+
+#panel .lower ul.user_links {
+	float: right;
+}
+
+#panel .lower ul.user_links li a {
+	padding: 0;
+	background-image: none;
+}
+
+#panel .upper {
+	background: #0f0f0f url(images/tcat.png) repeat-x;
+	color: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	padding: 7px;
+	clear: both;
+}
+
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #fff;
+}
+
+#panel .lower {
+	background: #efefef;
+	color: #999;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #CECECE;
+	padding: 5px;
+}
+
+#panel .lower a:link,
+#panel .lower a:visited,
+#panel .lower a:hover,
+#panel .lower a:active {
+	color: #666;
+}
+
+#search {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: right;
+	vertical-align: middle;
+}
+
+#search input.button,
+#search input.textbox {
+	border-color: #CECECE;
+}
+
+#search input.button {
+	color: #FAFAFA;
+	font-weight: bold;
+	border: 1px solid #00ff19;
+	background: #282828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#search input.button:hover {
+	border: 1px solid #FFFFFF ;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+#search input {
+	margin: -3px 0;
+}
+
+#quick_login .remember_me input {
+	vertical-align: middle;
+	margin: -3px 0 0 5px;
+}
+
+#footer {
+	clear: both;
+	margin: auto;
+	width: 1150px;
+}
+
+#footer ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#footer ul.menu li {
+	margin: 0 5px;
+	display: inline;
+}
+
+#footer .upper {
+	border-top: 1px solid #232323;
+	border-bottom: 1px solid #777;
+	border-right: 1px solid #00ff19;
+	border-left: 1px solid #00ff19;
+	padding: 6px;
+	font-size: 12px;
+	overflow: hidden;
+	background: #232323;
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+	color: #777;
+}
+
+#footer .upper .language {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .language select {
+	border-color: #CECECE;
+}
+
+#footer .upper .theme {
+	float: right;
+	margin: -1px;
+	margin-left: 15px;
+}
+
+#footer .upper .theme select {
+	border-color: #CECECE;
+}
+
+#footer .upper ul.bottom_links {
+	float: left;
+	margin: 4px 0 0 0;
+}
+
+#footer .lower {
+	color: #666;
+	padding: 6px 6px 12px 6px;
+	overflow: hidden;
+	font-size: 11px;
+	background: #232323;
+	border-right: 1px solid #00ff19;
+	border-left: 1px solid #00ff19;
+}
+
+#footer .lower a:link,
+#footer .lower a:visited {
+	color: #444;
+	font-weight: bold;
+}
+
+#footer .lower a:hover,
+#footer .lower a:active {
+	color: #333;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#footer .lower #current_time {
+	float: right;
+	color: #888;
+}
+
+#debug {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	font-size: 11px;
+}
+
+.scaleimages img {
+	max-width: 100%;
+}
+
+.forum_status {
+	height: 30px;
+	width: 30px;
+	background: url(images/forum_icon_sprite.png) no-repeat 0 0;
+	display: inline-block;
+}
+
+.forum_on {
+	background-position: 0 0;
+}
+
+.forum_off {
+	background-position: 0 -30px;
+}
+
+.forum_offlock {
+	background-position: 0 -60px;
+}
+
+.forum_offlink {
+	background-position: 0 -90px;
+}
+
+.subforumicon {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	margin: 0 5px;
+	background: url(images/mini_status_sprite.png) no-repeat 0 0;
+}
+
+.subforum_minion {
+	background-position: 0 0;
+}
+
+.subforum_minioff {
+	background-position: 0 -10px;
+}
+
+.subforum_miniofflock {
+	background-position: 0 -20px;
+}
+
+.subforum_miniofflink {
+	background-position: 0 -30px;
+}
+
+table {
+	color: #FEFEFE;
+	font-size: 13px;
+}
+
+.tborder {
+	background: #171717;
+	width: 100%;
+	margin: auto auto;
+	border: 1px solid #000;
+	padding: 1px;
+}
+
+.tfixed {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+.thead {
+	color: #ffffff;
+	border-bottom: 1px solid #263c30;
+	padding: 8px;
+	border-radius: 5px 5px 0px 0px;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.thead a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.thead a:hover,
+.thead a:active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.tcat {
+	color: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #000;
+	padding: 6px;
+	font-size: 12px;
+	background: #232323;
+}
+
+.tcat a:link {
+	color: #fff;
+}
+
+.tcat a:visited {
+	color: #fff;
+}
+
+.tcat a:hover,
+.tcat a:active {
+	color: #fff;
+}
+
+.trow1 {
+	background: #171717;
+	border-top: 1px dotted #999;
+}
+
+.trow2 {
+	background: #171717;
+	border-top: 1px dotted #999;
+}
+
+.trow_shaded {
+	background: #ffdde0;
+	border: 1px solid;
+	border-color: #fff #ffb8be #ffb8be #fff;
+}
+
+.no_bottom_border {
+	border-bottom: 0;
+}
+
+.post.unapproved_post {
+	background: #ffdde0;
+}
+
+.post.unapproved_post .post_author {
+	border-bottom-color: #ffb8be;
+}
+
+.post.classic.unapproved_post .post_author {
+	border-color: #ffb8be;
+}
+
+.post.unapproved_post .post_controls {
+	border-top-color: #ffb8be;
+}
+
+.trow_deleted,
+.post.deleted_post {
+	background: #E8DEFF;
+}
+
+.trow_selected,
+tr.trow_selected td {
+	background: #FFFBD9;
+	color: #333;
+	border-right-color: #F7E86A;
+	border-bottom-color: #F7E86A;
+}
+
+.trow_selected a:link,
+.trow_selected a:visited,
+.trow_selected a:hover,
+.trow_selected a:active {
+	color: #333;
+}
+
+.trow_sep {
+	background: #ddd;
+	color: #CECECE;
+	border-bottom: 1px solid #232323;
+	padding: 6px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.tfoot {
+	border-top: 1px solid #333;
+	padding: 6px;
+	background: #232323;
+	color: #FAFAFA;
+}
+
+.tfoot a:link {
+	color: #CECECE;
+	text-decoration: none;
+}
+
+.tfoot a:visited {
+	color: #CECECE;
+	text-decoration: none;
+}
+
+.tfoot a:hover,
+.tfoot a:active {
+	color: #CECECE;
+	text-decoration: underline;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+
+.bottommenu {
+	background: #efefef;
+	color: #333;
+	border: 1px solid #4874a3;
+	padding: 10px;
+}
+
+.navigation {
+	color: #FAFAFA;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid #000;
+	padding: 5px;
+	background: #171717;
+}
+
+.navigation a:link {
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+	text-decoration: underline;
+}
+
+.navigation .active {
+	color: #FAFAFA;
+	font-size: small;
+	font-weight: bold;
+}
+
+.smalltext {
+	font-size: 11px;
+}
+
+.largetext {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+fieldset {
+	padding: 12px;
+	border: 1px solid #ddd;
+	margin: 0;
+}
+
+fieldset.trow1,
+fieldset.trow2 {
+	border-color: #bbb;
+}
+
+fieldset.align_right {
+	text-align: right;
+}
+
+input.textbox {
+	background: #999;
+	color: #000;
+	border: 1px solid #CECECE;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+textarea {
+	background: #232323;
+	color: #FAFAFA;
+	border: 1px solid #00ff19;
+	padding: 2px;
+	line-height: 1.4;
+	outline: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+select {
+	background: #999;
+	padding: 3px;
+	border: 1px solid #CECECE;
+	outline: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+}
+
+button,
+input.button {
+	padding: 3px 8px;
+	cursor: pointer;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 13px;
+	font-weight: bold;
+	border: 1px solid #00ff19;
+	color: #FAFAFA;
+	outline: 0;
+	background: #282828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+button:hover,
+input.button:hover {
+	border: 1px solid #000000 ;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form input.error {
+	border: 1px solid #f30;
+	color: #f30;
+	background: #ffffff;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+form input.valid {
+	border: 1px solid #0c0;
+	background: #ffffff;
+	padding: 3px;
+	outline: 0;
+	font-size: 13px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+form label.error {
+	color: #f30;
+	margin: 5px;
+	padding: 0px;
+	display: block;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+form #message {
+    width: 500px;
+}
+
+.editor {
+	background: #f1f1f1;
+	border: 1px solid #CECECE;
+}
+
+.editor_control_bar {
+	background: #fff;
+	border: 1px solid #CECECE;
+}
+
+.post .editor_control_bar {
+	background: #f5f5f5;
+}
+
+.popup_menu {
+	background: #fff;
+	border: 1px solid #CECECE;
+}
+
+.popup_menu .popup_item {
+	background: #efefef;
+	color: #333;
+}
+
+.popup_menu .popup_item:hover {
+	background: #008df8;
+	color: #fff;
+}
+
+.trow_reputation_positive {
+	background: #ccffcc;
+}
+
+.trow_reputation_negative {
+	background: #ffcccc;
+}
+
+.reputation_positive {
+	color: green;
+}
+
+.reputation_neutral {
+	color: #444;
+}
+
+.reputation_negative {
+	color: red;
+}
+
+.repbox {
+	font-size:16px;
+	font-weight: bold;
+	padding:5px 7px 5px 7px;
+}
+
+._neutral {
+	background-color:#FAFAFA;
+	color: #999999;
+	border:1px solid #CECECE;
+}
+
+._minus {
+	background-color: #FDD2D1;
+	color: #CB0200;
+	border:1px solid #980201;
+}
+
+._plus {
+	background-color:#E8FCDC;
+	color: #008800;
+	border:1px solid #008800;
+}
+
+img {
+	border: none;
+}
+
+img.attachment {
+	border: 1px solid #E9E5D7;
+	padding: 2px;
+}
+
+hr {
+	background-color: #000000;
+	color: #000000;
+	height: 1px;
+	border: 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.hidden {
+	display: none;
+	float: none;
+	width: 1%;
+}
+
+.hiddenrow {
+	display: none;
+}
+
+.selectall {
+	background: #FFFBD9;
+	border-bottom: 1px solid #F7E86A;
+	color: #333;
+	text-align: center;
+}
+
+.expcolimage {
+	float: right;
+	width: auto;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+.tcat_menu > .expcolimage {
+	margin-top: 0;
+}
+
+blockquote {
+	border: 1px solid #7abcff;
+	margin: 0;
+	background: #333;
+	padding: 10px;
+}
+
+blockquote cite {
+	font-weight: bold;
+	border-bottom: 1px solid #00ff19;
+	font-style: normal;
+	display: block;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+blockquote cite span {
+	float: right;
+	font-weight: normal;
+	font-size: 12px;
+	color: #666;
+}
+
+blockquote cite span.highlight {
+	float: none;
+	font-weight: bold;
+	padding-bottom: 0;
+}
+
+.codeblock {
+	background: #555;
+	border: 1px solid #7abcff;
+	padding: 10px;
+}
+
+.codeblock .title {
+	border-bottom: 1px solid #00ff19;
+	font-weight: bold;
+	padding-bottom: 3px;
+	margin: 0 0 10px 0;
+}
+
+.codeblock code {
+	overflow: auto;
+	height: auto;
+	max-height: 200px;
+	display: block;
+	font-family: Monaco, Consolas, Courier, monospace;
+	font-size: 13px;
+}
+
+.smilie {
+	vertical-align: middle;
+}
+
+.smilie_pointer {
+	cursor: pointer;
+}
+
+.separator {
+	margin: 5px;
+	padding: 0;
+	height: 0px;
+	font-size: 1px;
+	list-style-type: none;
+}
+
+.popup_menu .popup_item_container {
+	margin: 1px;
+	text-align: left;
+}
+
+.popup_menu .popup_item {
+	display: block;
+	padding: 4px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.popup_menu a.popup_item:hover {
+	text-decoration: none;
+}
+
+.subject_new {
+	font-weight: bold;
+}
+
+.highlight {
+	background: #FFFFCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.pm_alert {
+	background: #FFF6BF;
+	border: 1px solid #FFD324;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+}
+
+.red_alert {
+	background: #FBE3E4;
+	border: 1px solid #A5161A;
+	color: #A5161A;
+	text-align: center;
+	padding: 5px 20px;
+	margin-bottom: 15px;
+	font-size: 11px;
+	word-wrap: break-word;
+}
+
+.red_alert a:link,
+.red_alert a:visited,
+.red_alert a:hover,
+.red_alert  a:active  {
+	color: #A5161A;
+}
+
+.high_warning {
+	color: #CC0000;
+}
+
+.moderate_warning {
+	color: #F3611B;
+}
+
+.low_warning {
+	color: #AE5700;
+}
+
+.online {
+	color: #15A018;
+}
+
+.offline {
+	color: #C7C7C7;
+}
+
+div.error {
+	padding: 5px 10px;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	background: #FFF6BF;
+	font-size: 12px;
+}
+
+div.error p {
+	margin: 0;
+	color: #333;
+	font-weight: normal;
+}
+
+div.error p em {
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 24px;
+	display: block;
+	color: #C00;
+	background: url(images/error.png) no-repeat 0;
+}
+
+div.error ul {
+	margin-left: 24px;
+}
+
+.pagination {
+	font-size: 11px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tfoot .pagination,
+.tcat .pagination {
+	padding-top: 0;
+}
+
+.pagination .pages {
+	font-weight: bold;
+}
+
+.pagination .pagination_current,
+.pagination a {
+	color: #FAFAFA;
+	padding: 3px 6px;
+	margin-bottom: 3px;
+}
+
+.pagination a {
+	border: 1px solid #00ff19;
+	background: #282828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.pagination .pagination_current {
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-weight: bold;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.pagination a:hover {
+	color: #FFFFFF;
+	border-color: #00ff19;
+	text-decoration: none;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.pagination .go_page img {
+	margin-bottom: -4px;
+}
+
+.drop_go_page {
+	background: #f5f5f5;
+	padding: 4px;
+}
+
+.pagination_breadcrumb {
+	background-color: #efefef;
+	border: 1px solid #fff;
+	outline: 1px solid #CECECE;
+	padding: 5px;
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+.pagination_breadcrumb_link {
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.thread_legend,
+.thread_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.thread_legend dd {
+	padding-bottom: 4px;
+	margin-right: 15px;
+}
+
+.thread_legend img {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.forum_legend,
+.forum_legend dt,
+.forum_legend dd {
+	margin: 0;
+	padding: 0;
+}
+
+.forum_legend dd {
+	float: left;
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.forum_legend dt {
+	margin-right: 10px;
+	float: left;
+}
+
+.success_message {
+	color: #00b200;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	color: #C00;
+	font-weight: bold;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+#posts_container {
+	padding: 0;
+}
+
+.ignored_post {
+	border-top: 3px solid #333;
+	padding: 15px;
+}
+
+.ignored_post .show_ignored_post {
+	margin-top: -15px;
+}
+
+.ignored_post .show_ignored_post a.button span {
+	background-position: 0 -400px;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post.classic {
+	padding-top: 15px;
+}
+
+.post .post_author {
+	border-bottom: 1px solid #777;
+	border-top: 2px solid #777;
+	padding: 5px;
+	overflow: hidden;
+	background: #171717; 
+}
+
+.post.classic .post_author {
+	border: none;
+	float: left;
+	width: 15%;
+	margin: 0 1% 15px 0;
+	border-left: 0;
+	padding: 5px 1%;
+}
+
+.post .post_author .buddy_status {
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+.post .post_author div.author_avatar {
+	float: left;
+	margin-right: 3px;
+}
+
+.post.classic .post_author div.author_avatar {
+	float: none;
+	text-align: center;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.post .post_author div.author_avatar img {
+	border-radius: 50%;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	box-shadow: 0 0 5px #4096ee;
+	max-height: 125px;
+	max-width: 125px;
+}
+
+.post .post_author div.author_avatar img:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	box-shadow: 0 0 5px #4096ee;
+	max-height: 250px;
+	max-width: 190px;
+}
+
+.post .post_author div.author_information {
+	float: left;
+	padding: 6px 8px;
+}
+
+.post.classic .post_author div.author_information {
+	float: none;
+	padding: 0;
+	text-align: center;
+}
+
+.post .post_author div.author_statistics {
+	float: right;
+	font-size: 11px;
+	padding: 3px 10px 3px 5px;
+	color: #999;
+	line-height: 1.3;
+}
+
+.post.classic .post_author div.author_statistics {
+	border-top: 1px dotted #CECECE;
+	margin: 6px 0 0 0;
+	padding: 6px 6px 3px 6px;
+	float: none;
+}
+
+.post .post_head {
+	font-size: 12px;
+	padding: 7px;
+	margin-bottom: 4px;
+	color: #777777;
+	border-bottom: 1px dotted #CECECE;
+}
+
+.post .post_head span.post_date {
+	color: #777777;
+}
+
+.post .post_head span.edited_post {
+	font-size: 10px;
+	color: #999;
+}
+
+.post .post_head span.edited_post a {
+	color: #666;
+}
+
+.post_body {
+	font-size: 14px;
+	padding: 12px 0;
+}
+
+.post.classic .post_content {
+	float: left;
+	width: 79%;
+	padding: 0 1% 5px 1%;
+}
+
+.post_content {
+	padding: 9px 10px 5px 10px;
+}
+
+.post_content .signature {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    margin: 5px;
+    max-height: 250px;
+    overflow: auto;
+    padding: 10px 0 4px;
+    position: relative;
+}
+
+.post .post_meta {
+	margin: 4px 0;
+	font-size: 11px;
+	color: #999;
+}
+
+.post .post_meta a:link,
+.post .post_meta a:visited {
+	color: #777;
+}
+
+.post .post_meta a:hover,
+.post .post_meta a:active {
+	color: #777;
+}
+
+.post_controls {
+	clear: both;
+	background: #232323;
+	border-bottom: 1px solid #00ff19;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.postbit_buttons > a:link,
+.postbit_buttons > a:hover,
+.postbit_buttons > a:visited,
+.postbit_buttons > a:active {
+	display: inline-block;
+	padding: 2px 5px;
+	margin: 2px;
+	font-size: 11px;
+	border: 1px solid #00ff19;
+	color: #FAFAFA;
+	background: #282828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.postbit_buttons > a:hover {
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.postbit_buttons a span {
+	padding-left: 20px;
+	display: inline-block;
+	height: 16px;
+	background-image: url(images/buttons_sprite.png);
+	background-repeat: no-repeat;
+}
+
+.postbit_buttons a.postbit_find span {
+	background-position: 0 0;
+}
+
+.postbit_buttons a.postbit_reputation_add span {
+	background-position: 0 -20px;
+}
+
+.postbit_buttons a.postbit_email span {
+	background-position: 0 -40px;
+}
+
+.postbit_buttons a.postbit_website span {
+	background-position: 0 -60px;
+}
+
+.postbit_buttons a.postbit_pm span {
+	background-position: 0 -80px;
+}
+
+.postbit_buttons a.postbit_quote span {
+	background-position: 0 -100px;
+}
+
+.postbit_buttons a.postbit_multiquote span {
+	background-position: 0 -120px;
+}
+
+.postbit_buttons a.postbit_multiquote_on span {
+	background-position: 0 -140px;
+}
+
+.postbit_buttons a.postbit_edit span {
+	background-position: 0 -160px;
+}
+
+.postbit_buttons a.postbit_qdelete span {
+	background-position: 0 -180px;
+}
+
+.postbit_buttons a.postbit_qrestore span {
+	background-position: 0 -200px;
+}
+
+.postbit_buttons a.postbit_report span {
+	background-position: 0 -220px;
+}
+
+.postbit_buttons a.postbit_warn span {
+	background-position: 0 -240px;
+}
+
+.postbit_buttons a.postbit_purgespammer span {
+	background-position: 0 -540px;
+}
+
+.postbit_buttons a.postbit_reply_pm span {
+	background-position: 0 -260px;
+}
+
+.postbit_buttons a.postbit_reply_all span {
+	background-position: 0 -280px;
+}
+
+.postbit_buttons a.postbit_forward_pm span {
+	background-position: 0 -300px;
+}
+
+.postbit_buttons a.postbit_delete_pm span {
+	background-position: 0 -320px;
+}
+
+a.button:link,
+a.button:visited,
+a.button:active {
+	color: #fff;
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 2px 2px 6px 2px;
+	border: 1px solid #000;
+	font-size: 14px;
+	font-weight: bold;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+a.button:hover{
+	border: 1px solid #000000 ;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+a.button.small_button {
+	font-size: 13px;
+	margin: 0;
+	padding: 3px 6px;
+}
+
+a.button span {
+	padding-left: 20px;
+	display: inline-block;
+	background-image: url(images/buttons_sprite.png);
+	background-repeat: no-repeat;
+}
+
+a.button.new_thread_button span {
+	background-position: 0 -340px;
+}
+
+a.button.new_reply_button span {
+	background-position: 0 -360px;
+}
+
+a.button.closed_button span {
+	background-position: 0 -380px;
+}
+
+a.button.rate_user_button span {
+	background-position: 0 -400px;
+}
+
+a.button.add_buddy_button span {
+	background-position: 0 -440px;
+}
+
+a.button.remove_buddy_button span {
+	background-position: 0 -480px;
+}
+
+a.button.add_ignore_button span {
+	background-position: 0 -460px;
+}
+
+a.button.remove_ignore_button span {
+	background-position: 0 -500px;
+}
+
+a.button.report_user_button span {
+	background-position: 0 -520px;
+}
+
+.quick_jump {
+	background: url(images/jump.png) no-repeat 0;
+	width: 13px;
+	height: 13px;
+	padding-left: 13px; /* amount of padding needed for image to fully show */
+	margin-top: -3px;
+	border: none;
+}
+
+.pollbar {
+	background: url(images/pollbar.png) top left repeat-x;
+	border: 1px solid #3f3f3f;
+	height: 10px;
+}
+
+.pollbar .percent {
+	display: none;
+}
+
+.posticons_label {
+	white-space: nowrap;
+}
+
+/** jGrowl Start **/
+
+/** Special IE6 Style Positioning **/
+.ie6 {
+	position: absolute;
+}
+
+.ie6.top-right {
+	right: auto;
+	bottom: auto;
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.top-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-right {
+	left: expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.bottom-left {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.ie6.center {
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+	width: 100%;
+}
+
+/** jGrowl Styling **/
+.jGrowl {
+	z-index: 9999;
+	color: #fff;
+	font-size: 12px;
+	position: fixed;
+}
+
+.jGrowl.top-left {
+	left: 0px;
+	top: 0px;
+}
+
+.jGrowl.top-right {
+	right: 0px;
+	top: 0px;
+}
+
+.jGrowl.bottom-left {
+	left: 0px;
+	bottom:	0px;
+}
+
+.jGrowl.bottom-right {
+	right: 0px;
+	bottom: 0px;
+}
+
+.jGrowl.center {
+	top: 0px;
+	width: 50%;
+	left: 25%;
+}
+
+/** Cross Browser Styling **/
+
+.center .jGrowl-notification,
+.center .jGrowl-closer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	background-color: #000;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	zoom: 1;
+	width: 235px;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	text-align: left;
+	display: none;
+	border-radius: 5px;
+}
+
+.jGrowl .jGrowl-notification {
+	min-height: 40px;
+}
+
+.jGrowl .jGrowl-notification,
+.jGrowl .jGrowl-closer {
+	margin: 10px;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-header {
+	font-weight: bold;
+	font-size: .85em;
+}
+
+.jGrowl .jGrowl-notification .jGrowl-close {
+	z-index: 99;
+	float: right;
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.jGrowl .jGrowl-closer {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/** Hide jGrowl when printing **/
+@media print {
+	.jGrowl {
+		display: none;
+	}
+}
+
+/** jGrowl End **/
+
+/** Modal Start **/
+
+.modal {
+	display: none;
+	width: 400px;
+	text-align: left;
+	background: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-o-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+}
+
+.modal a.close-modal {
+	position: absolute;
+	top: -12.5px;
+	right: -12.5px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background: url(images/close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+	display: none;
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-right: -32px;
+	margin-top: -32px;
+	background: url(images/spinner_big.gif) no-repeat center center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/** Modal End **/
+
+/** Impromptu Start **/
+
+/*! jQuery-Impromptu - v5.2.4 - 2014-05-26
+* http://trentrichardson.com/Impromptu
+* Copyright (c) 2014 Trent Richardson; Licensed MIT */
+
+.jqifade {
+	position: absolute;
+	background-color: #777777;
+}
+
+div.jqi {
+	width: 400px;
+	max-width:90%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	position: absolute;
+	background-color: #ffffff;
+	font-size: 11px;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 7px;
+}
+
+div.jqi .jqiclose {
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: default;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+
+div.jqi .jqistate {
+	background-color: #fff;
+}
+
+div.jqi .jqititle {
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+
+div.jqi .jqimessage {
+	padding: 10px;
+	line-height: 20px;
+	color: #444444;
+}
+
+div.jqi .jqibuttons {
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+div.jqi .jqibuttons button {
+	margin: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.jqi .jqibuttons button.jqidefaultbutton {
+	color: #489afe;
+}
+
+div.jqi .jqibuttons button:hover,
+div.jqi .jqibuttons button:focus {
+	color: #287ade;
+	outline: none;
+}
+
+.jqiwarning .jqi .jqibuttons {
+	background-color: #b95656;
+}
+
+/* sub states */
+
+div.jqi .jqiparentstate::after {
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+div.jqi .jqisubstate {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+
+div.jqi .jqisubstate .jqibuttons button {
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+
+.jqi .jqiarrow {
+	position: absolute;
+	height: 0; width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: solid 10px transparent;
+}
+
+.jqi .jqiarrowtl {
+	left: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff;
+}
+
+.jqi .jqiarrowtc {
+	left: 50%;
+	top: -20px;
+	border-bottom-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowtr {
+	right: 10px;
+	top: -20px;
+	border-bottom-color: #ffffff;
+}
+
+.jqi .jqiarrowbl {
+	left: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowbc {
+	left: 50%;
+	bottom: -20px;
+	border-top-color: #ffffff;
+	margin-left: -10px;
+}
+
+.jqi .jqiarrowbr {
+	right: 10px;
+	bottom: -20px;
+	border-top-color: #ffffff;
+}
+
+.jqi .jqiarrowlt {
+	left: -20px;
+	top: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowlm {
+	left: -20px;
+	top: 50%;
+	border-right-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowlb {
+	left: -20px;
+	bottom: 10px;
+	border-right-color: #ffffff;
+}
+
+.jqi .jqiarrowrt {
+	right: -20px;
+	top: 10px;
+	border-left-color: #ffffff;
+}
+
+.jqi .jqiarrowrm {
+	right: -20px;
+	top: 50%;
+	border-left-color: #ffffff;
+	margin-top: -10px;
+}
+
+.jqi .jqiarrowrb {
+	right: -20px;
+	bottom: 10px;
+	border-left-color: #ffffff;
+}
+
+/*VARIOS*/
+
+.avatar1a {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px 10px 0px 0px;
+	border: 1px solid #00ff19;
+	border-bottom: none;
+	background: #171717;
+}
+
+.avatar2a {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 0px 0px 10px 10px;
+	border: 1px solid #00ff19;
+	border-top: none;
+	background: #171717;
+}
+
+.avatar2div{
+	border: 1px solid #000;
+}
+
+/*VARIOS*/
+
+/*Cabecera recuadros*/
+
+.recuadro1 {
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+	font-weight: bold;
+    text-align: left;
+    width: 100%;
+	height: 30px;
+	padding-top: 7px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000000 0%,#45484d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 0%,#45484d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
+}
+
+.recuadro1 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.recuadro1 ul li {
+	margin: 0 7px;
+	display: inline;
+}
+
+.recuadro1 ul li a {
+	padding-left: 20px;
+	background-image: url(images/headerlinks_sprite.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.recuadro1 a.search {
+	background-position: 0 0;
+}
+
+.recuadro1 a.memberlist {
+	background-position: 0 -20px;
+}
+
+.recuadro1 a.calendar {
+	background-position: 0 -40px;
+}
+
+.recuadro1 a.help {
+	background-position: 0 -60px;
+}
+
+.recuadro1 a.portal {
+	background-position: 0 -180px;
+}
+
+.recuadro1  ul a:hover, .recuadro1  ul a:active {
+    background: none repeat scroll 0 0 #7e8a99;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.recuadro2 {
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+	font-weight: bold;
+    text-align: left;
+    width: 100%;
+	height: 234px;
+	background: #FFFFFF;
+	background-image: url(images/JAMPS-Black-Green-V2-By-XEDE/bg-clouds2.png);
+	background-repeat:repeat-x;
+}
+
+.recuadro3 {
+    width: 1128px;
+	height: 235px;
+	background: none;
+	background-repeat:repeat-x;
+	margin: auto;
+	padding: 0px 10px;
+	overflow: hidden;
+	background: #FFFFFF;
+	border-left: 1px solid #CECECE;
+	border-right: 1px solid #CECECE;
+}
+
+.cabecera_recuadro1 {
+	width: 100%;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#303030',GradientType=0 );
+	display: block;
+	height: 104px;
+	overflow: hidden;
+	border-bottom: 1px solid #E4F5FC;
+	background: #45484d;
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: -o-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+}
+
+.cabecera_recuadro2 {
+	color: #ECECEC;
+	float: right;
+	display: block;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 117px 0px -1px 0px;
+	width: 25%;
+	height: 82px;
+	border-top: 1px solid #00ff19;
+	border-left: 1px solid #00ff19;
+	border-right: 1px solid #00ff19;
+	border-bottom: 1px solid #232323;
+	border-radius: 10px 10px 0px 0px;
+	background: #232323;
+}
+
+.cabecera_recuadro3 {
+	margin: auto;
+	color: #FAFAFA;
+    width: 1190px;
+}
+
+.cabecera_recuadro4 {
+	margin: auto;
+	color: #FAFAFA;
+    width: 1150px;
+}
+
+.cabecera_recuadro5 {
+	color: #FAFAFA;
+	margin: 100px 0px -1px 0px ;
+}
+
+ul.cabecera_recuadro5 {
+	width: 70%;
+	padding: 0;
+	margin: 0;
+	height: 26px;
+	list-style: none;
+	float: left;
+	font-weight: bold;
+}
+
+ul.cabecera_recuadro5 li {
+	float: left;
+	padding-right: 5px;
+	margin-top: -2px;
+}
+
+ul.cabecera_recuadro5 li a {
+	background: #232323;
+	color: #FAFAFA;
+	float: left;
+	display: block;
+	height: 20px;
+	letter-spacing: -1px;
+	padding: 3px 8px 2px 8px;
+	border-top: 1px solid #00ff19;
+	border-right: 1px solid #00ff19;
+	border-left: 1px solid #00ff19;
+	border-bottom: 1px solid #232323;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 15px;
+	margin: 2px 0px -1px 0px ;
+}
+
+ul.cabecera_recuadro5 li a:hover {
+	color: #00ff19;
+	text-decoration: none;
+}
+
+ul.cabecera_recuadro5 li.activa {
+    margin-top: -8px;
+    position: relative;
+    z-index: 2;
+}
+/*
+ul.cabecera_recuadro5 li.activa a {
+	color: #FFFFFF;
+	padding-top: 6px;
+	border-bottom: none;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	height: 24px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 17px;
+	font-weight: bold;
+	background: -moz-linear-gradient(top,  rgba(22,57,117,1) 0%, rgba(0,0,0,0.5) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(22,57,117,1)), color-stop(100%,rgba(0,0,0,0.5))); 
+	background: -webkit-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); 
+	background: -o-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); 
+	background: -ms-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); 
+	background: linear-gradient(to bottom,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163975', endColorstr='#80000000',GradientType=0 );
+}*/
+
+.cabecera_recuadro6  {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:0px auto;
+	text-transform: none;
+}
+
+.cabecera_recuadro6 td{
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	text-transform: none;
+	padding:10px 5px;
+	overflow:hidden;
+	word-break:normal;
+}
+.cabecera_recuadro6 th{
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	text-transform: none;
+	padding:10px 5px;
+	overflow:hidden;
+	word-break:normal;
+}
+
+.cabecera_recuadro6_ima{
+	text-transform: none;
+	font-weight:normal;
+	text-transform: none;
+	width:64px; 
+	height:64px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px #4096ee;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.cabecera_recuadro6_ima:hover {
+	font-weight:normal;
+	text-transform: none;
+	box-shadow: 0px 0px 5px #4096ee;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+}
+
+.cabecera_recuadro7 {
+	color: #FAFAFA;
+	margin: 100px auto auto;
+}
+
+ul.cabecera_recuadro7 {
+	width: 30%;
+	margin-top: 13px;
+	margin-bottom: 10px;
+	padding: 0;
+	margin: 0;
+	height: 26px;
+	list-style: none;
+	float: right;
+	font-weight: bold;
+}
+
+ul.cabecera_recuadro7 li {
+	float: right;
+	padding-right: 5px;
+	margin-top: -2px;
+}
+
+ul.cabecera_recuadro7 li a {
+	color: #FAFAFA;
+	float: right;
+	display: block;
+	height: 20px;
+	letter-spacing: -1px;
+	margin-top: 2px;
+	margin-left: 5px;
+    margin-right: -6px;
+	padding: 3px 8px 2px 8px;
+	border-bottom: none;
+	border-top: 1px solid #CECECE;
+	border-right: 1px solid #CECECE;
+	border-left: 1px solid #CECECE;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.cabecera_recuadro7 li a:hover {
+	color: #E4F5FC;
+	text-decoration: none;
+	background: -moz-linear-gradient(top,  rgba(22,57,117,1) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(22,57,117,1)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163975', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+}
+
+ul.cabecera_recuadro7 li.activa {
+    margin-top: -8px;
+    position: relative;
+    z-index: 2;
+}
+
+ul.cabecera_recuadro7 li.activa a {
+	color: #FFFFFF;
+	padding-top: 6px;
+	border-bottom: none;
+	border-top: 1px solid #CECECE;
+	border-right: 1px solid #CECECE;
+	border-left: 1px solid #CECECE;
+	height: 24px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 17px;
+	font-weight: bold;
+	background: -moz-linear-gradient(top,  rgba(22,57,117,1) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(22,57,117,1)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(22,57,117,1) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163975', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*Cabecera recuadros*/
+
+/* INICIO VARIOS */
+
+.social1 {
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	color: #00ff19;
+}
+
+.imgefecto1 {
+	border-radius: 50%;
+	/*box-shadow: 0px 0px 15px #000;*/
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	opacity: 0.3;
+	width: 64px;
+}
+
+.imgefecto1:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	opacity: 1;
+	width: 96px;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}
+
+.bienvenido{
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.bienvenido a:link{
+	color: #171717;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.bienvenido a:link:hover{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.recuadro1c {
+	color: #FAFAFA;
+	font-weight: bold;
+}
+
+/* FIN VARIOS */
+
+/*INICIO MENU*/
+
+.anylinkcss {
+	background: #232323;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+	border: 1px solid #00ff19;
+	font: normal 10px Verdana;
+	z-index: 100;
+	min-width: 130px;
+	padding: 3px;
+}
+
+.anylinkcss ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:left
+}
+
+.anylinkcss ul li a {
+	color: #FAFAFA;
+	display: block;
+	padding: 4px 10px 4px 4px;
+	border-radius: 9px 9px 9px 9px;
+	text-decoration: none;
+	font-weight: bold;
+	background: #171717;
+}
+
+.anylinkcss ul li a:hover {
+	color: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 5px 5px 5px 5px;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.anylinkshadow {
+	position: absolute;
+	margin-top: 4px;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	visibility: hidden;
+}
+
+ul.bloque_miembro {
+    margin:0;
+    padding:0
+}
+
+ul.bloque_miembro li {
+    display:inline
+}
+
+ul.bloque_miembro li a {
+    font-size:11px;
+    font-weight:bold;
+    float:left;
+    padding:4px 15px;
+    outline:none
+}
+
+ul.bloque_miembro li a:link,ul.bloque_miembro li a:visited {
+    color:#FFFFFF;
+    text-decoration:none
+}
+
+ul.bloque_miembro li a:hover,ul.bloque_miembro li a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+ul.bloque_visitante {
+    margin:0;
+    padding:4px;
+    text-align:center
+}
+
+ul.bloque_visitante li {
+    display:inline
+}
+
+ul.bloque_visitante li a {
+    font-size:11px;
+    font-weight:bold;
+    padding:4px 50px;
+    outline:none
+}
+
+ul.bloque_visitante li a:link,ul.bloque_visitante li a:visited {
+    color:#000;
+    text-decoration:none
+}
+
+ul.bloque_visitante li a:hover,ul.bloque_visitante li a:active {
+	color: #7ABCFF;
+	text-decoration: none;
+}
+
+input.textbox, .pagination .pagination_current, .pagination a, blockquote, .codeblock, .codeblock code, .bottommenu, textarea, fieldset, .spoiler, legend {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tborder, .pm_alert, .red_alert {
+    border-radius: 8px 8px 8px 8px;
+	padding: 5px;
+}
+
+.wg_tborder {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 30px #777777;
+}
+
+select {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.popup_menu {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 15px #4E4E4E;
+}
+
+.popup_menu .popup_item {
+    border-radius: 5px 5px 5px 5px;
+}
+
+#panel, .anuncio {
+}
+
+.anylinkcss {
+	border-radius: 9px 9px 9px 9px;
+	box-shadow: 0 0 8px #2B2B2B;
+}
+
+.button {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.button:hover {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+#panel {
+	color: #FFFFFF;
+	height: 24px;
+	font-size: 11px;
+	padding: 5px 8px;
+	margin-top: -35px;
+}
+
+#panel2 {
+	color: #FFFFFF;
+	height: 24px;
+	font-size: 11px;
+	background: #ffa659; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffa659 0%, #ed6136 50%, #00ff19 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa659), color-stop(50%,#ed6136), color-stop(100%,#00ff19)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffa659 0%,#ed6136 50%,#00ff19 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffa659 0%,#ed6136 50%,#00ff19 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffa659 0%,#ed6136 50%,#00ff19 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffa659 0%,#ed6136 50%,#00ff19 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa659', endColorstr='#00ff19',GradientType=0 ); /* IE6-9 */
+}
+
+.panel3 {
+    color: #FFFFFF;
+    font-size: 11px;
+    height: 35px;
+	width:100%;
+	border-bottom: 1px solid #000000;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.social {
+float: left;
+}
+
+/*FIN MENU*/
+
+/*Contadores*/
+
+.contador1 {
+	/*border: 1px dotted #e1e1e1;*/
+    display: block;
+    font-weight: bold;
+    margin: 3px 3px 0;
+    padding: 2px 3px;
+    text-align: right;
+    width: 120px;
+	color: #008DF8;
+	border-bottom: 1px solid #777;
+	background: #232323;
+	border-radius: 3px;
+}
+
+.contador1a {
+    color: #008df8;
+	font-weight: bold;
+    padding: 4px 10px;
+    margin: 20px;
+    border-bottom: 1px solid #777;
+	background: #232323;	
+	border-radius: 3px;
+}
+
+/*Varios Inicio*/
+
+.linksvarios {
+	margin: auto;
+	width: 1150px;
+	color: #FAFAFA;
+	border-left: 1px solid #777777;
+	border-right: 1px solid #777777;
+    width: 1190px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.linksvarios  a:link,
+.linksvarios  a:visited,
+.linksvarios  a:hover,
+.linksvarios  a:active {
+	color: #FFFFFF;
+}
+
+
+.col {
+    float: left;
+    padding: 5px 15px;
+	color: #000000;
+	font-weight: bold;
+	margin-left: 20px;
+    margin-top: 10px;
+    width: 20%;
+	height: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #cecece;
+}
+
+.col a:hover{
+    transform: translate(10px,0);
+    -webkit-transform: translate(10px,0); /** Safari & Chrome **/
+    -o-transform: translate(10px,0); /** Opera **/
+    -moz-transform: translate(10px,0); /** Firefox **/
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+h3 {
+    background: none;
+    font: bold 18px Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    margin: 0 0 10px 0;
+    padding: 10px 0px 0px 0px;
+    color:#008DF8;
+}
+
+div.col ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.col li {
+    height: 35px;
+    margin: 3px 0;
+    padding: 0;
+}
+
+div.col li a {
+    display: block;
+    font: normal 12px Verdana, Geneva, sans-serif;
+    text-decoration: none;
+	padding: 0px 0px 0px 10px;
+}
+
+div.col li a:hover {
+	color:#000000;
+	font-weight: bold;
+}
+
+div.col li:hover {
+	color:#4096ee;
+	font-weight: bold;
+}
+
+.loginboton {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:arial;
+	padding:5px 10px;
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 16px;
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.loginboton a:link {
+	color: #FFFFFF;
+	text-decoration:none;
+}
+
+.loginboton:hover {
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #45484d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#45484d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#45484d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#45484d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#45484d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #000000 0%,#45484d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
+	text-decoration:none;
+	color: #000000;
+}
+
+.loginboton2 {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	cursor:pointer;
+	color:#4096ee;
+	font-family:arial;
+	padding:5px 10px;
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 16px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+.loginboton2 a:link {
+	color: #4096ee;
+	text-decoration:none;
+}
+
+.loginboton2:hover {
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e5e5e5 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e5e5e5 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	color:#000000;
+	text-decoration:none;
+}
+
+.cajitasocial1{
+	margin-top: 50px;
+	position: fixed;
+	height: 48px;
+	width: 48px;
+	margin-left: 1138px;
+	border-right: 1px solid #00ff19;
+	border-top: 1px solid #00ff19;
+	border-bottom: 1px solid #00ff19;
+	border-left: 1px solid #232323;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #232323;
+}
+
+.cajitasocial2{
+	margin-top: 110px;
+	position: fixed;
+	height: 48px;
+	width: 48px;
+	margin-left: 1138px;
+	border-right: 1px solid #00ff19;
+	border-top: 1px solid #00ff19;
+	border-bottom: 1px solid #00ff19;
+	border-left: 1px solid #232323;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #232323;
+}
+
+.cajitasocial3{
+	margin-top: 170px;
+	position: fixed;
+	height: 48px;
+	width: 48px;
+	margin-left: 1138px;
+	border-right: 1px solid #00ff19;
+	border-top: 1px solid #00ff19;
+	border-bottom: 1px solid #00ff19;
+	border-left: 1px solid #232323;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #232323;
+}
+
+.cajitasocial4{
+	margin-top: 230px;
+	position: fixed;
+	height: 48px;
+	width: 48px;
+	margin-left: 1138px;
+	border-right: 1px solid #00ff19;
+	border-top: 1px solid #00ff19;
+	border-bottom: 1px solid #00ff19;
+	border-left: 1px solid #232323;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #232323;
+}
+
+.cajitasocial1 img {
+	border-radius: 50%;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	/*opacity: 0.5;
+	box-shadow: 0px 0px 15px #000;
+	width: 32px;*/
+}
+
+.cajitasocial2 img {
+	border-radius: 50%;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	/*opacity: 0.5;
+	box-shadow: 0px 0px 15px #000;
+	width: 32px;*/
+}
+
+.cajitasocial3 img {
+	border-radius: 50%;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	/*opacity: 0.5;
+	box-shadow: 0px 0px 15px #000;
+	width: 32px;*/
+}
+
+.cajitasocial4 img {
+	border-radius: 50%;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	/*opacity: 0.5;
+	box-shadow: 0px 0px 15px #000;
+	width: 32px;*/
+}
+
+.cajitasocial1 img:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	opacity: 1;
+	width: 48px;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}
+
+.cajitasocial2 img:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	opacity: 1;
+	width: 48px;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);	
+}
+
+.cajitasocial3 img:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	opacity: 1;
+	width: 48px;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);	
+}
+.cajitasocial4 img:hover {
+	box-shadow: 0;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+	opacity: 1;
+	width: 48px;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);	
+}
+
+.circulo1 {
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 50%;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.circulo1 a:link ,
+.circulo1 a:hover,
+.circulo1 a:active,
+.circulo1 a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.subforosencolumnas {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.subforosencolumnas li{
+	width: 29%;
+	float: left;
+}
+
+.imarespuestarapida {
+	text-transform: none;
+	font-weight:normal;
+	text-transform: none;
+	width:100px; 
+	height:100px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px #4096ee;
+	padding: 0;
+	border: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.imarespuestarapida:hover {
+	font-weight:normal;
+	text-transform: none;
+	box-shadow: 0px 0px 5px #4096ee;
+	border-radius: 0;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	cursor: pointer;
+}
+
+/* Varios Fin */
+
+/* INICIO PESTAÑAS DE PERFIL */
+
+ul.pestanas {
+	width: 100%;
+	margin-top: 13px;
+	margin-bottom: 10px;
+	padding: 0;
+	margin: 0;
+	height: 26px;
+	list-style: none;
+}
+
+ul.pestanas li {
+	float: left;
+	padding-right: 5px;
+	margin-top: -2px;
+}
+
+ul.pestanas li a {
+	color: #FAFAFA;
+	float: left;
+	display: block;
+	height: 20px;
+	letter-spacing: -1px;
+	margin-top: 2px;
+	padding: 3px 8px 2px 8px;
+	border: 1px solid #000;
+	border-bottom: 0;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 15px;
+	font-weight: bold;
+	background: #232323;
+}
+
+ul.pestanas li a:hover {
+	color: #00ff19;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+ul.pestanas li.activa {
+    margin-top: -8px;
+    position: relative;
+    z-index: 2;
+}
+
+ul.pestanas li.activa a {
+	background: #232323;
+	color: #FAFAFA;
+	padding-top: 6px;
+	border-bottom: 10;
+	height: 24px;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 17px;
+	font-weight: bold;
+	border-top: 1px solid #00ff19;
+	border-left: 1px solid #00ff19;
+	border-right: 1px solid #00ff19;
+}
+
+.pestana_contenedor {
+	padding: 2px 4px 2px;
+	font-size: 95%;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+	border: 1px solid #00ff19;
+	background: none;
+}
+
+.pestana_contenido {
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+/* FIN PESTAÑAS DE PERFIL*/
+
+/*Avatar perfil inicio*/
+
+.avatarimg2 img {
+    border: 0 none;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #4096ee;
+    max-height: 125px;
+    max-width: 125px;
+    padding: 0;
+    transition: all 1s ease 0s;
+}
+.avatarimg2 img:hover {
+    border-radius: 0;
+    box-shadow: 0 0 5px #4096ee;
+    cursor: pointer;
+    max-height: 250px;
+    max-width: 190px;
+    transition: all 1s ease 0s;
+}
+/*Avatar perfil fin*/
+
+/*Avatar perfil varios inicio*/
+
+.botones2{
+    height: 24px;
+    width: 32px;
+	border: 1px solid #00ff19;
+	padding: 10px 0px 0px 0px;
+	float: left;
+	margin: 3px;
+	border-radius: 3px;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.botones2:hover{
+	border: 1px solid #000000 ;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #00ff19; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00ff19 0%, #26b200 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00ff19), color-stop(100%,#26b200)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #00ff19 0%,#26b200 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #00ff19 0%,#26b200 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff19', endColorstr='#26b200',GradientType=0 ); /* IE6-9 */
+}
+
+.cajita4{
+    height: 40px;
+    width: 165px;
+}
+
+/*Avatar perfil varios fin*/
+
+/*Avatar portal inicio*/
+
+.avatarimg3 img {
+    border: 0 none;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #4096ee;
+    max-height: 96px;
+    max-width: 96px;
+    padding: 0;
+    transition: all 1s ease 0s;
+}
+.avatarimg3 img:hover {
+    border-radius: 0;
+    box-shadow: 0 0 5px #4096ee;
+    cursor: pointer;
+    max-height: 125px;
+    max-width: 125px;
+    transition: all 1s ease 0s;
+}
+
+/*Avatar portal fin*/
+
+/** Impromptu End */]]>
+		</stylesheet>
+	</stylesheets>
+	<templates>
+		<template name="footer" version="1803"><![CDATA[</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE -->{$task_image}<!-- End task image code -->
+{$auto_dst_detection}
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			{$lang_select}
+			{$theme_select}
+			<ul class="menu bottom_links">
+				{$contact_us}
+				<li><a href="{$mybb->settings['homeurl']}">{$mybb->settings['homename']}</a></li>
+				<li><a href="#top">{$lang->bottomlinks_returntop}</a></li>
+				<li><a href="<archive_url>">{$lang->bottomlinks_litemode}</a></li>
+				<li><a href="{$mybb->settings['bburl']}/misc.php?action=syndication">{$lang->bottomlinks_syndication}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time">Soporte en <a href="http://www.Mybb-Es.com" title="Soporte para Foros Mybb en Español" target="_blank"> Mybb-Es</a> | <a href="http://jamps.org" title="JAMPS Web" target="_blank">JAMPS</a> | <a href="http://www.NunHost.com" title="NunHost Web Hosting para todos" target="_blank">NunHost</a> | {$lang->welcome_current_time}</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				{$lang->powered_by} <a href="http://www.mybb.com" target="_blank">MyBB{$mybbversion}</a>, &copy; 2002-{$copy_year} <a href="http://www.mybb.com" target="_blank">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+                    <span class="smalltext">
+					| Theme <a href="http://jamps.com.ar/" title="Theme Black & Green V2" target="_blank">JAMPS - Black & Green V2</a> Created by <a href="http://www.jamps.net" title="www.XEDE.com.ar" target="_blank">XEDE</a></span>
+		</div>
+	</div>
+</div>]]></template>
+		<template name="forumbit_depth1_cat" version="1801"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<thead>
+<tr>
+<td class="thead{$expthead}" colspan="4">
+<div class="expcolimage"><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/{$expcolimage}" id="cat_{$forum['fid']}_img" class="expander" alt="{$expaltext}" title="{$expaltext}" /></div>
+<div><strong><a href="{$forum_url}">{$forum['name']}</a></strong><br /><div class="smalltext">{$forum['description']}</div></div>
+</td>
+</tr>
+</thead>
+<tbody style="{$expdisplay}" id="cat_{$forum['fid']}_e">
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="85" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads} & {$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="200" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+{$sub_forums}
+</tbody>
+</table>
+<br />]]></template>
+		<template name="forumbit_depth2_forum" version="1801"><![CDATA[<tr>
+<td class="{$bgcolor}" align="center" valign="middle" width="1"><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/{$lightbulb['folder']}.png" alt="{$lightbulb['altonoff']}" title="{$lightbulb['altonoff']}" class="ajax_mark_read" id="mark_read_{$forum['fid']}" /></td>
+<td class="{$bgcolor}" valign="middle">
+<strong><a href="{$forum_url}">{$forum['name']}</a></strong>{$forum_viewers_text}<div class="smalltext">{$forum['description']}{$modlist}{$subforums}</div>
+</td>
+<td class="trow1" valign="middle" align="right" style="white-space: nowrap">
+<div class="contador1"><span style="float: left;"><img src="images/JAMPS-Black-Green-V2-By-XEDE/temas1a.png" />&nbsp{$lang->forumbit_threads}:</span>{$threads}{$unapproved['unapproved_threads']}</div>
+<div></div>
+<div class="contador1"><span style="float: left;"><img src="images/JAMPS-Black-Green-V2-By-XEDE/post1a.png" />&nbsp{$lang->forumbit_posts}:</span>{$posts}{$unapproved['unapproved_posts']}</div>
+</td>
+<td class="{$bgcolor}" valign="middle" align="left" style="white-space: nowrap">{$lastpost}</td>
+</tr>]]></template>
+		<template name="forumbit_depth2_forum_lastpost" version="1804"><![CDATA[<span class="smalltext">
+<a href="{$lastpost_link}" title="{$full_lastpost_subject}"><strong>{$lastpost_subject}</strong></a>
+<br />{$lastpost_date}<br />{$lang->by} {$lastpost_profilelink}</span>]]></template>
+		<template name="forumbit_depth3" version="1801"><![CDATA[<li>{$statusicon}<a href="forumdisplay.php?fid={$forum['fid']}" title="{$forum_viewers_text_plain}">{$forum['name']}</a></li>]]></template>
+		<template name="forumbit_subforums" version="1801"><![CDATA[<br />{$lang->subforums}<br /><ul class="subforosencolumnas">{$sub_forums}</ul>]]></template>
+		<template name="forumdisplay_announcements_announcement" version="1804"><![CDATA[<tr>
+<td align="center" class="{$bgcolor}" width="2%"><span class="thread_status {$folder}">&nbsp;</span></td>
+<td align="center" class="{$bgcolor}" width="2%"></td>
+<td class="{$bgcolor} forumdisplay_announcement">
+	<a href="{$announcement['announcementlink']}"{$new_class}>{$announcement['subject']}</a>
+	<div class="author smalltext">{$announcement['profilelink']}</div>
+</td>
+<td align="center" class="{$bgcolor} forumdisplay_announcement">-</td>
+<td align="center" class="{$bgcolor} forumdisplay_announcement">-</td>
+{$rating}
+<td class="{$bgcolor} forumdisplay_announcement" style="white-space: nowrap; text-align: right"><span class="smalltext">{$postdate}</span></td>
+{$modann}
+</tr>]]></template>
+		<template name="forumdisplay_subforums" version="1801"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="5" align="center"><strong>{$lang->sub_forums_in}</strong></td>
+</tr>
+<tr>
+<td class="tcat" width="2%">&nbsp;</td>
+<td class="tcat" width="59%"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads} / {$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="15%" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+{$forums}
+</table>
+<br />]]></template>
+		<template name="forumdisplay_thread" version="1804"><![CDATA[<tr class="inline_row">
+	<td align="center" class="{$bgcolor}{$thread_type_class}" width="2%"><span class="thread_status {$folder}" title="{$folder_label}">&nbsp;</span>{$icon}</td>
+	<td align="center" class="{$bgcolor}{$thread_type_class}" width="2%"></td>
+	<td class="{$bgcolor}{$thread_type_class}">
+		{$attachment_count}
+		<div>
+			<span>{$prefix} {$gotounread}{$thread['threadprefix']}<span class="{$inline_edit_class} {$new_class}" id="tid_{$inline_edit_tid}"><a href="{$thread['threadlink']}">{$thread['subject']}</a></span>{$thread['multipage']}</span>
+			<div class="author smalltext">{$thread['profilelink']}</div>
+		</div>
+	</td>
+	<td align="center" class="{$bgcolor}{$thread_type_class}"><a href="javascript:MyBB.whoPosted({$thread['tid']});">{$thread['replies']}</a>{$unapproved_posts}</td>
+	<td align="center" class="{$bgcolor}{$thread_type_class}">{$thread['views']}</td>
+	{$rating}
+	<td class="{$bgcolor}{$thread_type_class}" style="white-space: nowrap; text-align: left;">
+        <table border="0">
+         <tr>
+         <td></td>
+         <td>
+		<span class="lastpost smalltext">{$lastpostdate} {$lastposttime}<br />
+		<a href="{$thread['lastpostlink']}">{$lang->lastpost}</a>: {$lastposterlink}</span>
+        </td>
+        </tr>
+        </table>
+	</td>
+{$modbit}
+</tr>]]></template>
+		<template name="header" version="1804"><![CDATA[		<div class="panel3">
+        </div>
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+         <div class="panel2">
+			{$welcomeblock}
+          </div>
+		<div class="cabecera_recuadro3">
+		<div id="logo">
+		<a href="{$mybb->settings['bburl']}/index.php"><img src="{$theme['logo']}" alt="{$mybb->settings['bbname']}" title="{$mybb->settings['bbname']}" /></a>
+		</div>
+		</div>
+		<div class="cabecera_recuadro4">
+		<ul class="cabecera_recuadro5">
+		<li class="cabecera_recuadro5">
+		<a href="{$mybb->settings['bburl']}/portal.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/portaljamps1.png" alt="Portal JAMPS" /> Portal</a>
+		</li>	
+		<li class="cabecera_recuadro5">
+		<a href="{$mybb->settings['bburl']}/index.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/forojamps1.png" alt="Foros JAMPS" /> Forum</a>
+		</li>	
+		<li class="cabecera_recuadro5">
+		<a href="{$mybb->settings['bburl']}/memberlist.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/medallajamps1.png" alt="Members JAMPS" /> Members</a>
+		</li>	
+		<li class="cabecera_recuadro5">
+		<a href="{$mybb->settings['bburl']}/calendar.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/calendariojamps1.png" alt="Calendar JAMPS" /> Calendar</a>
+		</li>	
+		<li class="cabecera_recuadro5">
+		<a href="{$mybb->settings['bburl']}/misc.php?action=help"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/ayudajamps1.png" alt="Help JAMPS" /> Help</a>
+		</li>	
+		</ul>
+		</div>
+		<div id="content">
+		<div class="cajitasocial1">
+          <a href="https://www.facebook.com/JAMPS.com.ar" target="_blank"><img src="images/JAMPS-Black-Green-V2-By-XEDE/fb2a.png" alt="JAMPS En las redes sociales" align="middle" title="Put here your website URL"/></a>
+        </div>
+		<div class="cajitasocial2">
+           <a href="https://twitter.com/JAMPSWEB" target="_blank"><img src="images/JAMPS-Black-Green-V2-By-XEDE/tt2a.png" alt="JAMPS En las redes sociales" align="middle" title="Put here your website URL" /></a>
+        </div>
+		<div class="cajitasocial3">
+           <a href="https://plus.google.com/+JampsArgentina/" target="_blank"><img src="images/JAMPS-Black-Green-V2-By-XEDE/gp2a.png" alt="JAMPS En las redes sociales" align="middle" title="Put here your website URL" /></a>
+        </div>
+		<div class="cajitasocial4">
+           <a href="https://www.youtube.com/EDEXEDE" target="_blank"><img src="images/JAMPS-Black-Green-V2-By-XEDE/yt2a.png" alt="JAMPS En las redes sociales" align="middle" title="Put here your website URL" /></a>
+        </div>		
+			<div class="wrapper">
+			{$quicksearch}
+          	<div class="social1">
+				<div align="center">
+			<img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/seguinosjamps1.png" width="115" height="25" alt="JAMPS En las redes sociales"  title="Put here your website URL" />
+	<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FJAMPS.com.ar&amp;width=200&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=130383843711949" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:21px;"></iframe>
+				<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+				<a href="http://twitter.com/JAMPSWEB" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#00AEFF" data-lang="es">Follow @JAMPSWEB</a>
+				</div>
+			</div>
+				{$pm_notice}
+				{$bannedwarning}
+				{$bbclosedwarning}
+				{$unreadreports}{$myprofile_alertbar}
+				{$pending_joinrequests}
+				{$awaitingusers}
+				<navigation>
+				<br />]]></template>
+		<template name="headerinclude" version="1804"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1804"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1804"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1804"></script>
+
+{$stylesheets}
+
+<script type="text/javascript">
+	lang.unknown_error = "{$lang->unknown_error}";
+
+	lang.select2_match = "{$lang->select2_match}";
+	lang.select2_matches = "{$lang->select2_matches}";
+	lang.select2_nomatches = "{$lang->select2_nomatches}";
+	lang.select2_inputtooshort_single = "{$lang->select2_inputtooshort_single}";
+	lang.select2_inputtooshort_plural = "{$lang->select2_inputtooshort_plural}";
+	lang.select2_inputtoolong_single = "{$lang->select2_inputtoolong_single}";
+	lang.select2_inputtoolong_plural = "{$lang->select2_inputtoolong_plural}";
+	lang.select2_selectiontoobig_single = "{$lang->select2_selectiontoobig_single}";
+	lang.select2_selectiontoobig_plural = "{$lang->select2_selectiontoobig_plural}";
+	lang.select2_loadmore = "{$lang->select2_loadmore}";
+	lang.select2_searching = "{$lang->select2_searching}";
+
+	var cookieDomain = "{$mybb->settings['cookiedomain']}";
+	var cookiePath = "{$mybb->settings['cookiepath']}";
+	var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+	var deleteevent_confirm = "{$lang->deleteevent_confirm}";
+	var removeattach_confirm = "{$lang->removeattach_confirm}";
+	var loading_text = '{$lang->ajax_loading}';
+	var saving_changes = '{$lang->saving_changes}';
+	var use_xmlhttprequest = "{$mybb->settings['use_xmlhttprequest']}";
+	var my_post_key = "{$mybb->post_code}";
+	var rootpath = "{$mybb->settings['bburl']}";
+	var imagepath = "{$theme['imgdir']}";
+  	var yes_confirm = "{$lang->yes}";
+	var no_confirm = "{$lang->no}";
+	var MyBBEditor = null;
+	var spinner_image = "{$theme['imgdir']}/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+</script>]]></template>
+		<template name="header_welcomeblock_guest" version="1800"><![CDATA[<div id="panel">
+<span class="bienvenido" style="float: left">{$lang->welcome_guest}</span> &nbsp
+<span class="loginboton"><a href="{$mybb->settings['bburl']}/member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true }); return false;" class="login"><img src="images/JAMPS-Black-Green-V2-By-XEDE/login1.png" alt="Inicia Sesion" /> {$lang->welcome_login}</a></span>
+
+<span class="loginboton2"><a href="{$mybb->settings['bburl']}/member.php?action=register" class="register"><img src="images/JAMPS-Black-Green-V2-By-XEDE/registrar1.png" alt="Registrate" /> {$lang->welcome_register}</a></span>
+
+<span style="float: right; font-style:strong; font-size:16px"><img src="images/JAMPS-Black-Green-V2-By-XEDE/hora1.png" alt="La Hora" /> <strong>{$lang->welcome_current_time}</strong></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="{$mybb->settings['bburl']}/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<table width="100%" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>{$lang->login}</strong></td>
+							</tr>
+							<tr>
+								<td class="trow1" width="25%"><strong>{$login_username}</strong></td>
+								<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+							</tr>
+							<tr>
+								<td class="trow2"><strong>{$lang->password}</strong></td>
+								<td class="trow2">
+									<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /> <a href="{$mybb->settings['bburl']}/member.php?action=lostpw" class="lost_password">{$lang->lost_password}</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow1">&nbsp;</td>
+								<td class="trow1 remember_me">
+									<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+									<label for="quick_login_remember">{$lang->remember_me}</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow2" colspan="2">
+									<div align="center"><input name="submit" type="submit" class="button" value="{$lang->login}" /></div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script></div>]]></template>
+		<template name="header_welcomeblock_member" version="1804"><![CDATA[<script type="text/javascript" src="images/JAMPS-Black-Green-V2-By-XEDE/jscripts/anylinkcssmenu.js"></script>
+<script type="text/javascript">anylinkcssmenu.init("anchorclass")</script>
+	<div class="cabecera_recuadro2">
+	<table class="cabecera_recuadro6">
+	  <tr>
+		<th class="cabecera_recuadro6"><a href="{$mybb->settings['bburl']}/member.php?action=profile&uid={$mybb->user['uid']}"><img src="{$mybb->user['avatar']}" class="cabecera_recuadro6_ima" /></a></th>
+		<th class="cabecera_recuadro6">{$lang->welcome_back}</th>
+	  </tr>
+	</table>
+	</div>
+	<div id="panel">
+	<ul class="bloque_miembro">
+	<li><a href="#" class="anchorclass" rel="usuario[click]"> {$mybb->user['username']}  <img src="images/JAMPS-Black-Green-V2-By-XEDE/down.gif" alt="Desplegable" width="11" height="8" /></a></li>
+	<li><a href="#" class="anchorclass" rel="mensajesforos[click]"> Topics & Posts <img src="images/JAMPS-Black-Green-V2-By-XEDE/down.gif" alt="Desplegable" width="11" height="8" /></a></li>
+	<li><a href="#" class="anchorclass" rel="comunidad[click]"> Community <img src="images/JAMPS-Black-Green-V2-By-XEDE/down.gif" alt="Desplegable" width="11" height="8" /></a></li>
+	<li><a href="#" class="anchorclass" rel="paneldecontrol[click]"> My Account <img src="images/JAMPS-Black-Green-V2-By-XEDE/down.gif" alt="Desplegable" width="11" height="8" /></a></li>
+	</ul>
+	</div>
+	<div id="mensajesforos" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;"> Activity </li>
+<li><a href="{$mybb->settings['bburl']}/search.php?action=getnew"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/chatjamps3.gif" alt="Nuevos Temas"> {$lang->welcome_newposts} </a></li>
+<li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/chatjamps2.png" alt="Temas de Hoy"> {$lang->welcome_todaysposts} </a></li>
+</ul>
+</div>
+<div id="comunidad" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;">Community </li>
+<li><a href="{$mybb->settings['bburl']}/calendar.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/calendariojamps1.png" alt="Calendario"> Calendar </a></li>
+<li><a href="{$mybb->settings['bburl']}/memberlist.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/medallajamps1.png" alt="Miembros"> Members </a></li>
+<li><a href="{$mybb->settings['bburl']}/showteam.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/teamjamps1.png" alt="Equipo JAMPS"> Team JAMPS </a></li>
+<li><a href="{$mybb->settings['bburl']}/search.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/buscarjamps1.png" alt="Buscar"> Find </a></li>
+<li><a href="{$mybb->settings['bburl']}/online.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/onlinejamps1.png" alt="Quien esta Online"> Who is Online </a></li>
+<li><a href="{$mybb->settings['bburl']}/online.php?action=today"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/onlinejamps2.gif" alt="Quien se conecto hoy">Who logged today</a></li>
+<li><a href="{$mybb->settings['bburl']}/misc.php?action=help"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/ayudajamps1.png" alt="Ayuda"> Help </a></li>
+</ul>
+</div>
+<div id="paneldecontrol" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;">Profile</li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/paneldecontroljamps1.png" alt="Configurar Mi Cuenta"> {$lang->welcome_usercp} </a></li>
+<li class="thead" style="padding:3px; font-weight:bold;"> My Profile</li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=options"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/opciones1.png" alt="Mi Perfil"> Edit Options</a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=profile"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/perfiljamps1.png" alt="Mi Perfil"> Edit Profile</a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=avatar"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/avatar.gif" alt="Editar Avatar"> Edit Avatar </a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=editsig"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/editsig.gif" alt="Editar Firma"> Edit Signature </a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=editlists"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/amigos1.png" alt="Configurar lista de amigos"> Configure friends </a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=drafts"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/drafts.gif" alt="Borradores"> Drafts </a></li>
+<li>{$modcplink}{$admincplink}</li>
+<li><a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/salir2.png" alt="Cerrar Sesion"><strong>{$lang->welcome_logout}</strong></a></li>
+</ul>
+</ul>
+</div>
+<div id="usuario" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;">{$mybb->user['username']} </li>
+<li><a href="{$mybb->settings['bburl']}/member.php?action=profile&uid={$mybb->user['uid']}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/perfiljamps1.png" alt="Mi Perfil"> View Profile</a></li>
+<li><a href="#" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/misc.php?action=buddypopup', null, true); return false;"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/amigosjamps1.png" alt="Ayuda"> {$lang->welcome_open_buddy_list}</a></span></li>
+<li class="thead" style="padding:3px; font-weight:bold;"> Personal Message<br />
+<li><a href="{$mybb->settings['bburl']}/private.php?fid=1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_pm.png" alt="Bandeja de Entrada"> {$lang->welcome_pms_usage} </a></li>
+<li><a href="{$mybb->settings['bburl']}/private.php?fid=2"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_email.png" alt="Mensajes Enviados"> Send </a></li>
+</ul>
+</div>
+
+<div id="mensajesforos" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;"> Activity </li>
+<li><a href="{$mybb->settings['bburl']}/search.php?action=getnew"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/chatjamps3.gif" alt="Nuevos Temas"> {$lang->welcome_newposts} </a></li>
+<li><a href="{$mybb->settings['bburl']}/search.php?action=getdaily"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/chatjamps2.png" alt="Temas de Hoy"> {$lang->welcome_todaysposts} </a></li>
+</ul>
+</div>
+<div id="comunidad" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;">Community </li>
+<li><a href="{$mybb->settings['bburl']}/calendar.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/calendariojamps1.png" alt="Calendario"> Calendar </a></li>
+<li><a href="{$mybb->settings['bburl']}/memberlist.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/medallajamps1.png" alt="Miembros">{$lang->member_list} </a></li>
+<li><a href="{$mybb->settings['bburl']}/showteam.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/teamjamps1.png" alt="Equipo JAMPS"> Team JAMPS </a></li>
+<li><a href="{$mybb->settings['bburl']}/search.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/buscarjamps1.png" alt="Buscar"> Find </a></li>
+<li><a href="{$mybb->settings['bburl']}/online.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/onlinejamps1.png" alt="Quien esta Online">Who is Online </a></li>
+<li><a href="{$mybb->settings['bburl']}/online.php?action=today"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/onlinejamps2.gif" alt="Quien se conecto hoy"> Who logged today</a></li>
+<li><a href="{$mybb->settings['bburl']}/misc.php?action=help"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/ayudajamps1.png" alt="Ayuda"> Help </a></li>
+</ul>
+</div>
+<div id="paneldecontrol" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;"> Profile</li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/paneldecontroljamps1.png" alt="Configurar Mi Cuenta"> My Account</a></li>
+<li class="thead" style="padding:3px; font-weight:bold;"> My Profile</li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=profile"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/perfiljamps1.png" alt="Mi Perfil"> Edit Profile</a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=avatar"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/avatar.gif" alt="Editar Avatar"> Edit Avatar </a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=editsig"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/editsig.gif" alt="Editar Firma"> Edit Signature </a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=editlists"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/amigos1.png" alt="Configurar lista de amigos"> Configure friends</a></li>
+<li><a href="{$mybb->settings['bburl']}/usercp.php?action=drafts"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/drafts.gif" alt="Borradores"> Draft </a></li>
+<li>{$modcplink}{$admincplink}</li>
+<li><a href="{$mybb->settings['bburl']}/member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/salir2.png" alt="Cerrar Sesion"><strong>{$lang->welcome_logout}</strong></a></li>
+</ul>
+</ul>
+</div>
+<div id="usuario" class="anylinkcss">
+<ul>
+<li class="thead" style="padding:3px; font-weight:bold;">{$mybb->user['username']} </li>
+<li><a href="{$mybb->settings['bburl']}/member.php?action=profile&uid={$mybb->user['uid']}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/perfiljamps1.png" alt="Mi Perfil"> View Profile</a></li>
+<li><span class="links"><a href="#" onclick="MyBB.popupWindow('{$mybb->settings['bburl']}/misc.php?action=buddypopup', 'buddyList', 350, 350);"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/amigosjamps1.png" alt="Ayuda">{$lang->welcome_open_buddy_list}</a>
+	</span></li>
+<li class="thead" style="padding:3px; font-weight:bold;"> Personal Message<br />
+<li><a href="{$mybb->settings['bburl']}/private.php?fid=1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_pm.png" alt="Bandeja de Entrada"> Inbox</a></li>
+<li><a href="{$mybb->settings['bburl']}/private.php?fid=2"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_email.png" alt="Mensajes Enviados"> Sent </a></li>
+</ul>
+</div></div>]]></template>
+		<template name="index" version="1804"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "{$lang->no_new_posts}";
+	lang.click_mark_read = "{$lang->click_mark_read}";
+// -->
+</script>
+</head>
+<body>
+{$header}
+{$forums}
+{$boardstats}
+<div align="center">
+			<a href="https://www.facebook.com/JAMPS.com.ar" target="_blank"><img class="imgefecto1" src="images/JAMPS-Black-Green-V2-By-XEDE/fbjamps1.png"  title="Put here your website URL"/></a>&nbsp &nbsp 
+			<a href="http://steamcommunity.com/groups/JAMPS" target="_blank"><img class="imgefecto1" src="images/JAMPS-Black-Green-V2-By-XEDE/steamjamps1.png"  title="Put here your website URL"/></a>&nbsp &nbsp 
+			<a href="https://twitter.com/JAMPSWEB" target="_blank"><img class="imgefecto1" src="images/JAMPS-Black-Green-V2-By-XEDE/twjamps1.png"  title="Put here your website URL"/></a>
+			&nbsp &nbsp 
+			<a href="https://www.youtube.com/EDEXEDE" target="_blank"><img class="imgefecto1" src="images/JAMPS-Black-Green-V2-By-XEDE/youtubejamps2.png"  title="Put here your website URL"/></a>
+</div>	
+<br style="clear: both" />
+{$footer}
+</body>
+</html>]]></template>
+		<template name="index_birthdays" version="1800"><![CDATA[<tr><td class="tcat"><span class="smalltext"><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/cumples1a.png" alt="{$lang->todays_birthdays}" title="{$lang->todays_birthdays}" /> <strong>{$lang->todays_birthdays}</strong></span></td></tr>
+<tr>
+<td class="trow1"><span class="smalltext">{$bdays}</span></td>
+</tr>]]></template>
+		<template name="index_boardstats" version="1804"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<thead>
+<tr>
+<td class="thead{$collapsedthead['boardstats']}">
+<div class="expcolimage"><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/collapse{$collapsedimg['boardstats']}.png" id="boardstats_img" class="expander" alt="[-]" title="[-]" /></div>
+<div><strong>{$lang->boardstats}</strong></div>
+</td>
+</tr>
+</thead>
+<tbody style="{$collapsed['boardstats_e']}" id="boardstats_e">
+{$whosonline}
+{$birthdays}
+{$forumstats}
+<tr>
+	<td class="tfoot" style="text-align: right">
+		<span class="smalltext">
+			{$logoutlink}
+			<img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/ok12.png" /><a href="misc.php?action=markread{$post_code_string}">{$lang->markread}</a>
+			<img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/team2.png" /><a href="showteam.php">&nbsp;{$lang->forumteam}</a>&nbsp;
+			<img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/estadisticas5.png" />{$statspage}&nbsp;
+		</span>
+	</td>
+</tr>
+</tbody>
+</table>
+<br />]]></template>
+		<template name="index_logoutlink" version="1804"><![CDATA[<a href="member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/salir2.png" /> {$lang->index_logout}</a>]]></template>
+		<template name="index_stats" version="1800"><![CDATA[<tr><td class="tcat"><span class="smalltext"><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/estadisticas1a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> <strong>{$lang->boardstats}</strong></span></td></tr>
+<tr>
+<td class="trow1">
+<div style="text-align: center;">
+<strong>
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/temas1a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> Topics<span class="contador1a">{$stats['numthreads']}</span>&nbsp;
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/post1a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> Posts<span class="contador1a">{$stats['numposts']}</span>&nbsp;
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/miembros1a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> Members<span class="contador1a">{$stats['numusers']}</span>&nbsp;
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/estadisticas2a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> <span title="{$recorddate}, {$recordtime}">M.U. Online<span class="contador1a">{$mostonline['numusers']}</span></span>&nbsp;
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/nuevomiembro1a.png" alt="{$lang->boardstats}" title="{$lang->boardstats}" /> Newest registered<span class="contador1a">$newestmember</span>
+</strong>
+</div>
+</td>
+</tr>]]></template>
+		<template name="index_statspage" version="1804"><![CDATA[ <a href="stats.php">{$lang->forumstats}</a>]]></template>
+		<template name="index_whosonline" version="1800"><![CDATA[<tr>
+<td class="tcat"><span class="smalltext"><strong><img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/online1a.png" alt="{$lang->whos_online}" title="{$lang->whos_online}" /> {$lang->whos_online}</strong> [<a href="online.php">{$lang->complete_list}</a>]</span></td>
+</tr>
+<tr>
+<td class="trow1"><span class="smalltext">{$lang->online_note}<br />{$onlinemembers}</span></td>
+</tr>]]></template>
+		<template name="member_profile" version="1804"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$lang->profile}</title>
+<script type="text/javascript" src="images/JAMPS-Black-Green-V2-By-XEDE/jscripts/perfiljquery.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function() {
+    jQuery(".pestana_contenido").hide();
+    jQuery("ul.pestanas li:first").addClass("activa").show();
+    jQuery(".pestana_contenido:first").show();
+    jQuery("ul.pestanas li").click(function() {
+        jQuery("ul.pestanas li").removeClass("activa");
+        jQuery(this).addClass("activa");
+        jQuery(".pestana_contenido").hide();
+        var pestanaactiva = jQuery(this).find("a").attr("href");
+        jQuery(pestanaactiva).fadeIn();
+        return false;
+    });
+});
+</script>
+{$headerinclude}
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1800"></script>
+</head>
+<body>
+{$header}
+<br />
+{$awaybit}
+    <div style="float: left; width: 24%;">
+        <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="6" width="100%">
+            <tr>
+                <td class="avatar1a" align="center" valign="middle" style="font-weight: bold;">
+					<span class="largetext"><strong>{$formattedname}</strong></span><br />
+					<div class="avatarimg2">{$avatar}</div><br />
+					({$usertitle})<br />
+					{$groupimage}
+					{$userstars}<br />
+					<div class="cajita4">
+					<div class="botones2"><a href="search.php?action=finduserthreads&amp;uid={$uid}" title="{$lang->find_threads}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/temas1a.png" alt="{$lang->find_threads}" /></a></div>
+                    <div class="botones2"><a href="search.php?action=finduser&amp;uid={$uid}" title="{$lang->find_posts}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/post1a.png" alt="{$lang->find_posts}" /></a></div>
+                    <div class="botones2"><a href="private.php?action=send&amp;uid={$memprofile['uid']}" title="{$lang->send_pm}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_pm.png" /></a></div>
+                    <div class="botones2"><a href="member.php?action=emailuser&amp;uid={$memprofile['uid']}" title="{$lang->send_email}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_email.png" /></a></div>
+					</div>
+				 </td>
+            </tr>
+            <tr>
+                <td class="avatar2a smalltext" style="font-weight: bold;" colspan="2">
+					{$lang->registration_date} {$memregdate} <br />
+					{$lang->date_of_birth} {$membday} {$membdayage} <br />
+					{$lang->local_time} {$localtime} <br />
+					{$lang->postbit_status} {$online_status} <br />
+					<br />
+					{$ignore_options}<br />
+					{$report_options}<br />
+                    {$buddy_options}<br />
+                </td>
+            </tr>
+        </table>
+		<br />
+		{$youtube}
+		{$last_visit}
+		{$modoptions}
+	    {$adminoptions}
+        </div>
+        <div style="float: right; width: 75%;">
+            <br />
+            <ul class="pestanas" align="center">
+                <li class=""><a href="#pestana_1">Informatión</a></li>
+				<li class=""><a href="#pestana_2">Contact</a></li>
+				<li class=""><a href="#pestana_3">Signature</a></li>
+				<li class=""><a href="#pestana_4">About me</a></li>
+			</ul>
+            <div class="pestana_contenedor">
+                <div style="display: none;" id="pestana_1" class="pestana_contenido">
+                    <table cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" width="100%">
+                        <tr>
+                            <td colspan="2" class="thead"><strong>{$lang->users_forum_info}</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="trow1" width="170"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/calendario1.png" /> <strong>{$lang->joined}</strong></td>
+                            <td class="trow1">{$memregdate}</td>
+                        </tr>
+                        <tr>
+                            <td class="trow2"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/calendario2.png" /> <strong>{$lang->lastvisit}</strong></td>
+                            <td class="trow2">{$memlastvisitdate} {$memlastvisittime}</td>
+                        </tr>
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/post1a.png" alt="{$lang->find_posts}" /> <strong>{$lang->total_posts}</strong></td>
+                            <td class="trow1">{$memprofile['postnum']} ({$lang->ppd_percent_total})<br /><span class="smalltext">(<a href="search.php?action=finduserthreads&amp;uid={$uid}">{$lang->find_threads}</a> &mdash; <a href="search.php?action=finduser&amp;uid={$uid}">{$lang->find_posts}</a>)</span></td>
+                        </tr>
+						<tr>
+							<td class="trow2"><img src="images/JAMPS-Black-Green-V2-By-XEDE/temas1a.png" alt="{$lang->find_threads}" /> <strong>{$lang->total_threads}</strong></td>
+							<td class="trow2">{$memprofile['threadnum']} ({$lang->tpd_percent_total})<br /><span class="smalltext">(<a href="search.php?action=finduserthreads&amp;uid={$uid}">{$lang->find_threads}</a>)</span></td>
+						</tr>					
+                        <tr>
+                            <td class="trow2"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/reloj1.png" /> <strong>{$lang->timeonline}</strong></td>
+                            <td class="trow2">{$timeonline}</td>
+                        </tr>
+                        {$referrals}
+                        {$reputation}
+                        {$warning_level}
+					</table>
+				</div>
+				<div style="display: block;" id="pestana_2" class="pestana_contenido">
+                   	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" width="100%">
+                        <tr>
+                            <td colspan="2" class="thead"><strong>{$lang->users_contact_details}</strong></td>
+                        </tr>
+                        {$website}
+                        {$sendemail}
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_pm.png" /> <strong>{$lang->pm}</strong></td>
+                            <td class="trow1"><a href="private.php?action=send&amp;uid={$memprofile['uid']}">{$lang->send_pm}</a></td>
+                        </tr>
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/icq3.png" /> <strong>{$lang->icq_number}</strong></td>
+                            <td class="trow1">{$memprofile['icq']}</td>
+                        </tr>
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/steam1.png" /> <strong>STEAM Profile</strong></td>
+                            <td class="trow1"><img src="http://steamprofile.com/steam/profile/steamprofile/{$memprofile['aim']}.png"</img></td>
+                        </tr>
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/yahoo1.png" /> <strong>{$lang->yahoo_id}</strong></td>
+                            <td class="trow1"><a href="javascript:;" onclick="MyBB.popupWindow('misc.php?action=imcenter&amp;imtype=yahoo&amp;uid={$uid}', 'imcenter', 450, 300);">{$memprofile['yahoo']}</a></td>
+                        </tr>
+                        <tr>
+                            <td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/skype1.png" /> <strong>{$lang->skype_id}</strong></td>
+                            <td class="trow1"><a href="javascript:;" onclick="MyBB.popupWindow('/misc.php?action=imcenter&amp;imtype=skype&amp;uid={$uid}'); return false;">{$memprofile['skype']}</a></td>
+                        </tr>
+						<tr>
+							<td class="trow1"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/googletalk1.png" /> <strong>{$lang->google_id}</strong></td>
+							<td class="trow1">{$memprofile['google']}</td>
+						</tr>
+                    </table>
+                </div>
+                <div style="display: none;" id="pestana_3" class="pestana_contenido">
+                           {$signature}
+				</div>
+				<div style="display: none;" id="pestana_4" class="pestana_contenido">
+				{$profilefields}
+				</div>
+                </div>
+            </div>
+{$footer}
+</body>
+</html>]]></template>
+		<template name="member_profile_email" version="1804"><![CDATA[<tr>
+<td class="{$bgcolor}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/profile_email.png" /> <strong>{$lang->email}</strong></td>
+<td class="{$bgcolor}"><a href="member.php?action=emailuser&amp;uid={$memprofile['uid']}">{$lang->send_user_email}</a></td>
+</tr>]]></template>
+		<template name="member_profile_online" version="1803"><![CDATA[<a href="online.php"><span class="online" style="font-weight: bold;">{$lang->postbit_status_online}</span></a> 
+<br />
+({$location} @ {$location_time})]]></template>
+		<template name="member_profile_referrals" version="1804"><![CDATA[<tr>
+<td class="{$bg_color}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/referidos1.png" /> <strong>{$lang->members_referred}</strong></td>
+<td class="{$bg_color}">{$memprofile['referrals']}</td>
+</tr>]]></template>
+		<template name="member_profile_reputation" version="1804"><![CDATA[<tr>
+	<td class="{$bg_color}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/+rep1.png" /> <strong>{$lang->reputation}</strong></td>
+	<td class="{$bg_color}">{$reputation} [<a href="reputation.php?uid={$memprofile['uid']}">{$lang->reputation_details}</a>] {$vote_link}</td>
+</tr>]]></template>
+		<template name="member_profile_warninglevel" version="1804"><![CDATA[<tr>
+	<td class="{$bg_color}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/warning1.png" /> <strong>{$lang->warning_level}</strong></td>
+	<td class="{$bg_color}"><a href="{$warning_link}">{$warning_level}</a> {$warn_user}</td>
+</tr>]]></template>
+		<template name="member_profile_website" version="1804"><![CDATA[<tr>
+	<td class="{$bgcolor}"><img src="images/JAMPS-Black-Green-V2-By-XEDE/varios/internet3.png" /> <strong>{$lang->homepage}</strong></td>
+	<td class="{$bgcolor}"><a href="{$memprofile['website']}" target="_blank">{$memprofile['website']}</a></td>
+</tr>]]></template>
+		<template name="nav" version="1801"><![CDATA[<div class="navigation">
+<img src="{$theme['imgdir']}/JAMPS-Black-Green-V2-By-XEDE/homejamps.png" alt="Home" title="Inicio" />{$nav}{$activesep}{$activebit}
+</div>]]></template>
+		<template name="portal_announcement_avatar" version="1804"><![CDATA[<td class="avatarimg3" style="text-align: center; vertical-align: top;" {$useravatar['width_height']}><img src="{$useravatar['image']}" alt="" {$useravatar['width_height']} /></td>]]></template>
+		<template name="portal_welcome_membertext" version="1804"><![CDATA[<div class="avatarimg3" valign="middle" align="center" ><img src="{$mybb->user['avatar']}" alt="{$mybb->user['username']}'s avatar" ></div><br />
+<span class="smalltext"><em>{$lang->member_welcome_lastvisit}</em> {$lastvisit}<br />
+{$lang->since_then}<br />
+<strong>&raquo;</strong> {$lang->new_announcements}<br />
+<strong>&raquo;</strong> {$lang->new_threads}<br />
+<strong>&raquo;</strong> {$lang->new_posts}<br /><br />
+<a href="{$mybb->settings['bburl']}/search.php?action=getnew">{$lang->view_new}</a><br /><a href="{$mybb->settings['bburl']}/search.php?action=getdaily">{$lang->view_todays}</a>
+</span>]]></template>
+		<template name="postbit_classic" version="1804"><![CDATA[{$ignore_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<div class="post classic {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
+<div class="post_author scaleimages">
+	<div class="author_information">
+			<strong><span class="largetext">{$post['profilelink']}</span></strong> {$post['onlinestatus']}<br />
+			<span class="smalltext">{$post['usertitle']}</span><br />
+	</div>
+	<div class="postbit-avatar">{$post['useravatar']}</div>
+	<div class="author_information">
+			<span class="smalltext">
+				{$post['userstars']}
+				{$post['groupimage']}
+			</span>
+	</div>
+	<div class="author_statistics">
+		{$post['user_details']}
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head" title="{$post['subject_title']}">
+		{$post['posturl']}
+		{$post['icon']}
+		<span class="post_date">{$post['postdate']} <span class="post_edit" id="edited_by_{$post['pid']}">{$post['editedmsg']}</span></span>
+	{$post['subject_extra']}
+	</div>
+	<div class="post_body scaleimages" id="pid_{$post['pid']}">
+		{$post['message']}
+	</div>
+	<br />
+	<div><iframe src="//www.facebook.com/plugins/like.php?href={$mybb->settings['bburl']}/showthread.php?tid={$tid}&amp;send=false&amp;layout=button_count&amp;width=130&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:20px;" allowTransparency="true"></iframe>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'es'}
+</script>
+<g:plusone size="medium" href="{$mybb->settings['bburl']}/showthread.php?tid={$tid}"></g:plusone>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="JAMPSWEB" data-lang="es">Twittear</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>	
+	<br />
+	{$post['attachments']}
+	{$post['signature']}
+	<div class="post_meta" id="post_meta_{$post['pid']}">
+		{$post['iplogged']}
+	</div>
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		{$post['button_email']}{$post['button_pm']}{$post['button_www']}{$post['button_find']}{$post['button_rep']}
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		{$post['button_edit']}{$post['button_quickdelete']}{$post['button_quickrestore']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}{$post['button_purgespammer']}{$post['button_reply_pm']}{$post['button_replyall_pm']}{$post['button_forward_pm']}{$post['button_delete_pm']}
+	</div>
+</div>
+</div>]]></template>
+		<template name="postbit_gotopost" version="1801"><![CDATA[<a href="{$url}" class="quick_jump">&nbsp;</a>]]></template>
+		<template name="postbit_posturl" version="1801"><![CDATA[<div class="float_right" style="vertical-align: top">
+<span class="circulo1"><a href="{$post['postlink']}#pid{$post['pid']}" title="{$post['subject_title']}">#{$post_number}</a></span>
+{$post['inlinecheck']}
+</div>]]></template>
+		<template name="search_results_posts_post" version="1804"><![CDATA[<tr class="inline_row">
+	<td align="center" class="{$bgcolor}" width="2%"><span class="thread_status {$folder}">&nbsp;</span>{$icon}&nbsp;</td>
+	<td align="center" class="{$bgcolor}" width="2%"></td>
+	<td class="{$bgcolor}">
+		<span class="smalltext">
+			{$lang->post_thread} <a href="{$thread_url}{$highlight}">{$post['thread_subject']}</a><br />
+			{$lang->post_subject} <a href="{$post_url}{$highlight}#pid{$post['pid']}">{$post['subject']}</a>
+		</span><br />
+		<table width="100%"><tr><td><span class="smalltext"><em>{$prev}</em></span></td></tr></table>
+	</td>
+	<td align="center" class="{$bgcolor}">{$post['profilelink']}</td>
+	<td class="{$bgcolor}" >{$post['forumlink']}</td>
+	<td align="center" class="{$bgcolor}"><a href="javascript:MyBB.whoPosted({$post['tid']});">{$post['thread_replies']}</a></td>
+	<td align="center" class="{$bgcolor}">{$post['thread_views']}</td>
+	<td class="{$bgcolor}" style="white-space: nowrap; text-align: center;"><span class="smalltext">{$posted}</span></td>
+	{$inline_mod_checkbox}
+</tr>]]></template>
+		<template name="search_results_threads_thread" version="1804"><![CDATA[<tr class="inline_row">
+	<td align="center" class="{$bgcolor}" width="2%"><span class="thread_status {$folder}" title="{$folder_label}">&nbsp;</span>{$icon}&nbsp;</td>
+	<td align="center" class="{$bgcolor}" width="2%"></td>
+	<td class="{$bgcolor}">
+		{$attachment_count}
+		<div>
+			<span>{$prefix} {$gotounread}{$thread['threadprefix']}<a href="{$thread_link}{$highlight}" class="{$inline_edit_class} {$new_class}" id="tid_{$inline_edit_tid}">{$thread['subject']}</a>{$thread['multipage']}</span>
+			<div class="author smalltext">{$thread['profilelink']}</div>
+		</div>
+	</td>
+	<td class="{$bgcolor}">{$thread['forumlink']}</td>
+	<td align="center" class="{$bgcolor}"><a href="javascript:MyBB.whoPosted({$thread['tid']});">{$thread['replies']}</a></td>
+	<td align="center" class="{$bgcolor}">{$thread['views']}</td>
+	<td class="{$bgcolor}" style="white-space: nowrap">
+            <table border"0">
+                <tr>
+					<td width="2%">
+						
+					</td>
+					<td>
+						<span class="smalltext">
+							{$lastpostdate}<br />
+							<a href="{$thread['lastpostlink']}">{$lang->lastpost}</a>: {$lastposterlink}
+						</span>
+					</td>
+				</tr>
+			</table>
+	</td>
+	{$inline_mod_checkbox}
+</tr>]]></template>
+		<template name="showthread" version="1803"><![CDATA[<html>
+<head>
+<title>{$thread['subject']}</title>
+{$headerinclude}
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "{$lang->quickdelete_confirm}";
+	var quickrestore_confirm = "{$lang->quickrestore_confirm}";
+	var allowEditReason = "{$mybb->settings['alloweditreason']}";
+	lang.save_changes = "{$lang->save_changes}";
+	lang.cancel_edit = "{$lang->cancel_edit}";
+	lang.quick_edit_update_error = "{$lang->quick_edit_update_error}";
+	lang.quick_reply_post_error = "{$lang->quick_reply_post_error}";
+	lang.quick_delete_error = "{$lang->quick_delete_error}";
+	lang.quick_delete_success = "{$lang->quick_delete_success}";
+	lang.quick_delete_thread_success = "{$lang->quick_delete_thread_success}";
+	lang.quick_restore_error = "{$lang->quick_restore_error}";
+	lang.quick_restore_success = "{$lang->quick_restore_success}";
+	lang.editreason = "{$lang->postbit_editreason}";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1800"></script>
+<script src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/thread.js?ver=1800"></script>
+</head>
+<body>
+	{$header}
+	{$threadnotesbox}
+	{$pollbox}
+	<div class="float_left">
+		{$multipage}
+	</div>
+	
+		<table border="0" cellspacing="0" cellpadding="4" class="tborder" style="clear: both;">
+        <tbody>
+			<tr>
+			<td class="thead" colspan="6">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:;" id="thread_modes">{$lang->thread_modes}</a>{$threadnoteslink}</strong></span>
+				</div>
+				<div class="float_left">
+					<strong>{$thread['threadprefix']}{$thread['subject']}</strong>
+				</div>
+			</td>      
+			</tr>
+			<tr>
+			<td class="tfoot" colspan="6">
+				<div class="float_left">
+					<strong>&laquo; <a href="{$next_oldest_link}">{$lang->next_oldest}</a> | <a href="{$next_newest_link}">{$lang->next_newest}</a> &raquo;</strong>
+				</div>
+			</td>
+			</tr>
+			<tr>
+            <td width="50" class="trow1">
+            <center><span class="recuadro1c"> {$lang->views} {$thread['views']}<br /> <img src="images/JAMPS-Black-Green-V2-By-XEDE/show1a.png"></span></center>
+            </td>
+            <td width="50" class="trow1">
+            <center><span class="recuadro1c"> {$lang->replies} <a href="javascript:MyBB.whoPosted({$thread['tid']});">{$thread['replies']}<br /> <img src="images/JAMPS-Black-Green-V2-By-XEDE/reply1a.png"></a></span></center>
+            </td>
+            <td width="220" class="trow1" align="center">
+			<iframe src="//www.facebook.com/plugins/like.php?href={$mybb->settings['bburl']}/showthread.php?tid={$tid}&amp;send=false&amp;layout=button_count&amp;width=130&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:20px;" allowTransparency="true"></iframe>
+			<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+			  {lang: 'es'}
+			</script>
+			<g:plusone size="medium" href="{$mybb->settings['bburl']}/showthread.php?tid={$tid}"></g:plusone>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="JAMPSWEB" data-lang="es">Twittear</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <td width="50" class="trow1">
+			{$ratethread}
+			</td>
+            <td width="50" class="trow2" align="center">
+			<div style="margin: 6px 0px;">
+			{$newreply}
+			</div></td>
+			</tr>
+			<tr>
+			<td class="tcat" colspan="6">
+				<div>
+					{$usersbrowsing}
+				</div>
+			</td>
+		</tr>
+		</tbody>
+		</table>	
+	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder tfixed clear">
+	<tr>	
+	<td id="posts_container">
+	<div id="posts">
+		{$posts}
+	</div>
+	</td>
+	</tr>
+		<tr>
+			<td class="tfoot">
+				{$search_thread}
+				<div>
+					<strong>&laquo; <a href="{$next_oldest_link}">{$lang->next_oldest}</a> | <a href="{$next_newest_link}">{$lang->next_newest}</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		{$multipage}
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		{$newreply}
+	</div>
+	<br class="clear" />
+	{$quickreply}
+	{$threadexbox}
+	{$similarthreads}
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<li class="printable"><a href="printthread.php?tid={$tid}">{$lang->view_printable}</a></li>
+			{$sendthread}
+			<li class="subscription_{$add_remove_subscription}"><a href="usercp2.php?action={$add_remove_subscription}subscription&amp;tid={$tid}&amp;my_post_key={$mybb->post_code}">{$add_remove_subscription_text}</a></li>
+			{$addpoll}
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		{$moderationoptions}
+		{$forumjump}
+	</div>
+	<br class="clear" />
+	{$footer}
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="showthread.php?mode=linear&amp;tid={$tid}&amp;pid={$pid}#pid{$pid}" class="popup_item">{$lang->linear}</a></div><div class="popup_item_container"><a href="showthread.php?mode=threaded&amp;tid={$tid}&amp;pid={$pid}#pid{$pid}" class="popup_item">{$lang->threaded}</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		$(".author_avatar img").error(function () {
+			$(this).unbind("error").closest('.author_avatar').remove();
+		});
+	</script>
+</body>
+</html>]]></template>
+		<template name="showthread_quickreply" version="1801"><![CDATA[<div id="quickreply_spinner" class="showthread_spinner" style="display: none"><img src="{$theme['imgdir']}/spinner.gif" /></div>
+<br />
+{$moderation_notice}
+<form method="post" action="newreply.php?tid={$tid}&amp;processed=1" name="quick_reply_form" id="quick_reply_form">
+	<input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+	<input type="hidden" name="subject" value="RE: {$reply_subject}" />
+	<input type="hidden" name="action" value="do_newreply" />
+	<input type="hidden" name="posthash" value="{$posthash}" id="posthash" />
+	<input type="hidden" name="quoted_ids" value="" id="quoted_ids" />
+	<input type="hidden" name="lastpid" id="lastpid" value="{$last_pid}" />
+	<input type="hidden" name="from_page" value="{$page}" />
+	<input type="hidden" name="tid" value="{$tid}" />
+	<input type="hidden" name="method" value="quickreply" />
+
+	<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+		<thead>
+			<tr>
+				<td class="thead" colspan="3">
+					<div class="expcolimage"><img src="{$theme['imgdir']}/collapse{$collapsedimg['quickreply']}.png" id="quickreply_img" class="expander" alt="[-]" title="[-]" /></div>
+					<div><strong>{$lang->quick_reply}</strong></div>
+				</td>
+			</tr>
+		</thead>
+		<tbody style="{$collapsed['quickreply_e']}" id="quickreply_e">
+			<tr>
+				<td class="{$trow}" valign="middle" width="10%">
+					<img src="{$mybb->user['avatar']}" class="imarespuestarapida" align="middle"/>
+				</td>
+				<td class="{$trow}">
+					<div style="width: 98%">
+						<textarea style="width: 100%; padding: 4px; margin: 0;" rows="8" cols="80" name="message" id="message" tabindex="1"></textarea>
+					</div>
+					<div class="editor_control_bar" style="width: 95%; padding: 4px; margin-top: 3px; display: none;" id="quickreply_multiquote">
+						<span class="smalltext">
+							{$lang->quickreply_multiquote_selected} <a href="./newreply.php?tid={$tid}&amp;load_all_quotes=1" onclick="return Thread.loadMultiQuoted();">{$lang->quickreply_multiquote_now}</a> {$lang->or} <a href="javascript:Thread.clearMultiQuoted();">{$lang->quickreply_multiquote_deselect}</a>.
+						</span>
+					</div>
+				</td>
+				<td class="{$trow}" valign="top" width="22%">
+					<strong>{$lang->message}</strong><br />
+					<span class="smalltext">{$lang->message_note}<br /><br />
+					{$option_signature}
+					<label><input type="checkbox" class="checkbox" name="postoptions[disablesmilies]" value="1" />&nbsp;<strong>{$lang->disable_smilies}</strong></label>{$closeoption}</span>
+				</td>
+			</tr>
+			{$captcha}
+			<tr>
+				<td colspan="3" align="center" class="tfoot"><input type="submit" class="button" value="{$lang->post_reply}" tabindex="2" accesskey="s" id="quick_reply_submit" /> <input type="submit" class="button" name="previewpost" value="{$lang->preview_post}" tabindex="3" /></td>
+			</tr>
+		</tbody>
+	</table>
+</form>]]></template>
+		<template name="showthread_usersbrowsing" version="1801"><![CDATA[<span class="smalltext">{$lang->users_browsing_thread} {$onlinemembers}{$onlinesep}{$invisonline}{$onlinesep2}{$guestsonline}</span>]]></template>
+	</templates>
+</theme>

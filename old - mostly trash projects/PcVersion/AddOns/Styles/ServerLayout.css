@@ -1,0 +1,78 @@
+.ServerHolder{
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkorange;
+    cursor: context-menu;
+    background-color: brown;
+    background-size: 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 87%;
+    height: 95vh;
+    overflow: hidden;
+    position: fixed;
+    left: 155px;
+}.ServerTopper{
+    background-color: aqua;
+    color: deeppink;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    height: 65px;
+    font-size: 50px;
+    font-style: oblique;
+    font-family: "Times New Roman", Times, serif;
+}.ServerContainer{
+    width: initial;
+    height: initial;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}.Img{
+    height: 30%;
+    width: 30%;
+}.Down{
+    position: absolute;
+    bottom: 15px;
+}.ImgR{
+    position: static;
+    margin-left: 70%;
+    height: 30%;
+    width: 30%;
+}.Rdown{
+    position: absolute;
+    bottom: 15px;
+    right: 7px;
+}.middle{
+    margin-left: 32.5%;
+    margin-top: -17%;
+    text-align: center;
+    width: 35%;
+    height: 70vh;
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    font-weight: bold;
+}.ServerSection{
+    opacity: 1;
+    font-size: 40px;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+    color: blue;
+    margin-bottom: 10px;
+}.ServerSpecail{
+    opacity: none;
+    font-size: 20px;
+    color: blue;
+    margin-top: 0px;
+    text-decoration: underline;
+}.ServerSec{    
+    opacity: none;
+}.ServerContainerShit{
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+}

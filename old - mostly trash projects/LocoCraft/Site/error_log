@@ -1,0 +1,8 @@
+[22-Oct-2017 11:59:52 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[22-Oct-2017 11:59:52 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51
+[24-Oct-2017 16:11:39 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[24-Oct-2017 16:11:39 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51
+[24-Oct-2017 16:11:44 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[24-Oct-2017 16:11:44 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51
+[24-Oct-2017 16:11:48 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 43
+[24-Oct-2017 16:11:48 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/LocoCraft/Site/AddOns/PhP/Utils.php on line 51

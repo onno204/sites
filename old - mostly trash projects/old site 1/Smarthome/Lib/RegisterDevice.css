@@ -1,0 +1,28 @@
+
+.RegisterDeviceForm ul li{
+    list-style: none;
+}
+.RegisterDeviceForm ul li a{
+    transition-duration: 0.7s;
+    text-decoration: none;
+    color: rgba(10,10,150,1);
+}
+.RegisterDeviceForm ul li a:hover{
+    text-decoration: underline;
+    font-size: 18px; 
+    font-weight: bold;
+    color: rgba(60,60,200,1);
+}
+.RegisterDeviceForm ul li a:visited{
+    color: rgba(10,10,150,1);
+}
+.RegDevError{
+    font-size: x-large;
+    color: red;
+    font-weight: bold;
+}
+.RegSuccess{
+    background-color: rgba(0,150,150,0.5);
+    width: 30vw;
+    padding: 10px;
+}

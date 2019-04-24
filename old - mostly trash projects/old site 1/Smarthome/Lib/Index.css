@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    background-image: url("../../Lib/Pictures/ColorBackground.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    display: inline-block;
+    margin-left: 23vw;
+    margin-top: 2vh;
+    height: 100vh;
+    width: 70vw;
+    top: 0px;
+    position: absolute;
+    
+}
+
+/* Nav bar */
+nav{
+    align-self: center;
+    text-align: center;
+    background-color: rgba(245,245,245,0.5); 
+    padding: 0px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3), 0px 10px 10px rgba(0,0,0,0.3);
+    width: 20vw;
+    height: 100vh;
+    z-index: 4;
+    display: inline-block;
+    position: fixed;
+}
+nav ul{
+    width: 90%;
+    list-style-type: none;
+    padding-left: 9px;
+}
+nav ul li{
+    display: block;
+}
+nav ul a{
+    padding-bottom: 6px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    display: block;
+    color: rgba(0,0,0,1);
+    background-color: rgba(25,124,255,0);
+}
+nav ul a:hover{
+    transition-duration: 0.4s;
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,200,1);
+    box-shadow: 3px 4px 8px 2px rgba(0,0,0,0.3), 4px 6px 10px 3px rgba(0,0,0,0.1);
+}
+nav ul a:visited{
+    color: rgba(0,0,0,1);
+    transition-duration: 0.4s;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 3px 4px 8px 2px rgba(0,0,0,0.3), 4px 6px 10px 3px rgba(0,0,0,0.1);
+}
+nav ul a select{
+    width: -webkit-fill-available;
+    height: inherit;
+}
+
+devices device{
+    display: inline-grid;
+    width: 21vw;
+    height: 22vw;
+    background-color: rgba(150, 225,150,0.7);
+    padding: 1vw;
+    margin-top: 4px;
+    text-align: center;
+    overflow: auto;
+}
+
+devices device devicename{
+    color: black;
+    font-weight: bolder;
+}
+devices device object{
+    width: 15vw;
+    height: 15vw;
+}
+devices device object img{
+    width: 15vw;
+    height: 15vw;
+}
+devices device devicestate::before{
+    content: "State: ";
+    color: black;
+    font-weight: bold;
+}
+devices device devicestate{
+    color: green;
+    font-weight: bold;
+}
+
+devices device switchdevicestate::before{
+    content: "Switch state to: ";
+    color: black;
+    font-weight: bold;
+}
+devices device switchdevicestate{
+    color: red;
+    font-weight: bold;
+    background-color: rgba(50,50,50,0.5);
+    border-color: rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    padding: 3px;
+}

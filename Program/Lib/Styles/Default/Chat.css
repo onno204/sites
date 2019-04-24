@@ -1,0 +1,71 @@
+/* Box containing all the messages */
+.ChatBox{
+    width: 80%;
+    min-height: 75vh;
+    background-color: rgba(50,50,50,0.7);
+    border-color: rgba(25,25,25,0.9);
+    border-style: solid;
+    border-width: 3px;
+    overflow: auto;
+    padding: 10px;
+}
+/* Surounding Box */
+.ChatBox label{
+    left: 0px;
+    display: table;
+    background-color: rgba(50,50,155,1);
+    border-color: rgba(25,25,105,1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 6px;
+}
+/* Time */
+.ChatBox span{
+    color: rgba(200,200,200,1);
+}
+.ChatBox span:before{
+    color: gray;
+    content: "[";
+}
+.ChatBox span:after{
+    color: gray;
+    content: "]";
+}
+/* Username */
+.ChatBox a{
+    color: rgba(240,240,240,1);
+}
+.ChatBox a:before{
+}
+.ChatBox a:after{
+}
+/* Message */
+.ChatBox p{
+    display: inline-block;
+    margin: 0px;
+    color: orange;
+}
+.ChatBox p:before{
+    color: white;
+    content: "> ";
+}
+.ChatBox p:after{
+    content: ".";
+}
+/* Right */
+.Right{
+    text-align: right;
+}
+
+/* SendMessage Form */
+.SendMessage{
+    width: 80%;
+    background-color: rgba(100,100,100,0.7);
+    padding: 3px;
+}
+.SendMessage input[type="text"]{
+    width: 80%;
+}

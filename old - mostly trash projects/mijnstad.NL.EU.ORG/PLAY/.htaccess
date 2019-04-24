@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^play\.reallands\.nl\.eu\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.play\.reallands\.nl\.eu\.org$
+RewriteRule ^/?$ "46\.249\.47\.242\:25756" [R=301,L]
+

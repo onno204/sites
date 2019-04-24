@@ -1,0 +1,126 @@
+.SetBackground{
+    width: 99%;
+    height: 100%;
+    background-image: url("../Pictures/BackGround.png");
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    overflow: auto;
+    position: fixed;
+    bottom: 20px;
+    width: 80%;
+    left: 10%;
+    height: 82%;
+    padding-right: 16px;
+    text-align: center;
+}
+
+
+.Footer{
+    display: block;
+    height: 22px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1200;
+    cursor: default;
+}.Footer a {
+    text-decoration: none;
+    color: cyan;
+}
+.UnderFooter{
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    height: 101px;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    overflow: auto;
+    position: fixed;
+    bottom: 22px;
+    cursor: default;
+    z-index: 1199;
+}
+
+.Topper{
+    display: inline;
+    height: 13%;
+    width: 80%;
+    left: 10%;
+    top: 1%;
+    position: fixed;
+    background-color: rgba( 150, 150, 0, 0.3);
+    overflow: auto;
+    z-index: 100;
+}
+.TopperInline{
+    margin-top: 2%;
+    display: inline;
+}
+.Menu {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 3%;
+    padding: 0;
+}.Menu li {
+    display: inline;
+}.Menu a {
+    color: #000;
+    background-color: lightgreen;
+    padding: 2% 2%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    border-style: solid;
+    border-color: darkseagreen;
+    border-width: 1px;
+    border-radius: 4px;
+}.Menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}.Menu a:hover:not(.active) {
+    border-color: darkgray;
+    border-radius: 0px;
+    background-color: #555;
+    transition-duration: 0.3s;
+    color: white;
+}
+.Title{
+    position: fixed;
+    color: #000;
+    background-color: rgba( 150, 150, 0, 0.3);
+    height: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: normal;
+    cursor: pointer;
+    background-image: url("../Pictures/Image.png");
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+    background-position: 50%, 50%;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 50%;
+}.Title:hover{
+    background-size: 95% 95%;
+    background-color: rgba( 150, 150, 0, 0.8);
+    transition-duration: 0.3s;
+}
+
+
+
+
+

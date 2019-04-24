@@ -1,0 +1,2 @@
+[24-Oct-2017 16:16:14 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:14 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65

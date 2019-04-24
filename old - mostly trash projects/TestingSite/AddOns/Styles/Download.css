@@ -1,0 +1,39 @@
+
+.DownloadTitle{
+    height: 50px;
+    width: 70%;
+    background-color: rgba( 0, 0, 130, 0.5);
+    color: white;
+    margin: 0;
+    font-size: 40px;
+    text-align: left;
+    text-shadow: 2px 2px black;
+    padding: 0;
+    padding-left: 10px;
+}
+.DownloadButton {
+    text-align: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}.DownloadButton li {
+    display: inline;
+}.DownloadButton a {
+    color: #000;
+    background-color: orange;
+    padding: 1% 1%;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 25px;
+}.DownloadButton a:hover:not(.active) {
+    border-color: darkgray;
+    border-radius: 1px;
+    background-color: green;
+    transition-duration: 0.3s;
+    color: white;
+}

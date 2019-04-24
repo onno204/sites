@@ -1,0 +1,116 @@
+.LeftTop{
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkorange;
+    width: 35%;
+    height: 370px;
+    background-color: rgba( 230, 255, 100, 0.5);
+    margin-top: 130px;
+    margin-left: 50px;
+}.RightTop{
+    border-radius: 50px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkorange;
+    text-align: center;
+    float: right;
+    margin-top: -370px;
+    margin-right: 60px;
+    height: 370px;
+    width: 500px;
+    background-color: rgba( 230, 255, 100, 0.5);
+}.ProfileImg{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkorange;
+    display: inline-block;
+    float: left;
+}.Upload{
+    display: inline-block;
+    margin-left: 5px;
+}.Inline{
+    position: relative;
+    display: inline-block;
+}.ProfileNotice{
+    color: red;
+    font-size: 3vh;
+    margin: 0px;
+}.ProfileSpace{
+    margin-top: 5px;
+}.Fixed{
+    position: fixed;
+}.ProfileInfo{
+    color: darkblue;
+    margin: 13px;
+}.ProfileInfoDiv{
+    margin-top: 35px;
+}.ProfileUpload{
+    font-size: 15px;
+}
+
+
+
+
+
+
+//OverLay's!
+//OverLay's!
+//OverLay's!
+//OverLay's!
+//OverLay's!
+//OverLay's!
+//OverLay's!
+//OverLay's!
+
+.LoginBar{
+}.LoginOverlay{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 900px;
+    width: 1865px;
+    background-color: rgba( 0, 0, 0, 0.5);
+    z-index: 3000;
+    color: white;
+    text-align: center;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}.LoginOverlayText{
+    position: fixed;
+    top: 200px;
+    left: 665px;
+    height: 200px;
+    width: 665px;
+    background-color: rgba( 100, 0, 0, 0.5);
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}.LoginAsignMiddle{
+    position: absolute;
+    padding-left: 15%;
+    text-align: right;
+}.LoginError{
+    position: absolute;
+    color: red;
+    margin-left: 273px;
+    width: 300px;
+    text-align: left;
+    border-radius: 15px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: darkorange;
+}.LoginRed{
+    color: red;
+}.LoginRedText{
+    color: red;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}

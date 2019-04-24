@@ -1,0 +1,76 @@
+
+.Inline{
+    display: inline-block;
+}
+.Clients{
+    position: absolute;
+    height: 93%;
+    width: 15%;
+    max-width: 200px;
+    min-width: 30px;
+    left: 0px;
+    resize: horizontal;
+    font-size: 15px;
+    background-color: rgba( 240, 240, 240, 0.8);
+}
+.SendMessage{
+    position: absolute;
+    bottom: 30px;
+    background-color: rgba( 100, 100, 100, 0.7);
+    margin: 0px;
+    padding: 10px;
+    width: 60%;
+    left: 17%;
+    text-align: left;
+    z-index: 20;
+}
+
+.SendMessageMsgBox{
+    width: 70%;
+}
+
+.Messages{
+    position: absolute;
+    background-color: rgba( 40, 80, 80, 0.7);
+    width: 60%;
+    height: 80%;
+    left: 17%;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.MessageBox{
+    text-align: left;
+    display: none;
+}
+.Show{
+    display: block;
+}
+.message{
+    display: block;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 97%;
+}
+
+.NieuwMessage{
+    background-color: rgba( 10, 255, 10, 1);
+}
+
+.Extern{
+    text-align: right;
+    background-color: rgba( 200, 250, 200, 0.4);
+}
+.Intern{
+    text-align: left;
+    background-color: rgba( 200, 200, 250, 0.4);
+}
+
+

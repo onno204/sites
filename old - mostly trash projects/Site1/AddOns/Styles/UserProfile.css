@@ -1,0 +1,55 @@
+.Selector table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Selector td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.Selector tr:nth-child(even) {
+    background-color: rgba( 200, 200, 200, 0.7);
+    color: black;
+    text-shadow: -1.2px 1.2px white, -1.2px 1.2px white;
+}
+
+.Selector tr{
+    color: white;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+    background-color: rgba( 100, 100, 100, 0.7);
+    text-align: center;
+}
+.Selector a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.Banned{
+    background-color: rgba( 225, 10, 10, 0.7);
+    width: 20px;;
+    background-image: url("https://img.clipartfest.com/6dfdf5a1ca5a7d2b9ffadec8011cc0a8_sad-face-crying-face-clipart-sad-face-clipart-transparent_894-894.png");
+    background-repeat: no-repeat;
+    background-size: 34px;
+}
+.NotBanned{
+    background-color: rgba( 10, 225, 10, 0.7);
+    width: 20px;
+    background-image: url("https://img.clipartfest.com/da8c0022ea2838d6ec30c77bdb8b5236_smiley-face-transparent-awesome-happy-face-clipart-transparent-background_600-600.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+}
+.IP{
+    width: 100px;
+}
+
+.Selector div{
+    width: 100%;
+}
+
+
+
+
+
+

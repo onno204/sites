@@ -1,0 +1,18 @@
+
+/* Footer */
+Footer{
+    background-color: rgba(50,50,50,0.7);
+    
+}
+Footer .FooterLeft{
+    display: inline-block;
+    width: 30vw;
+}
+Footer .FooterMid{
+    display: inline-block;
+    width: 30vw;
+}
+Footer .FooterRight{
+    display: inline-block;
+    width: 30vw; 
+}

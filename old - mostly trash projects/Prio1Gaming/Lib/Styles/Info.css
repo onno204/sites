@@ -1,0 +1,30 @@
+
+.green{
+    color: green;
+}.red{
+    color: red;
+}
+.UploadIframe{
+    border-style: none;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.2), -4px -4px 3px rgba(0,0,0,0.2), 4px -4px 3px rgba(0,0,0,0.2), -4px 4px 3px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.15);
+}
+.Input{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    transition-duration: 0.7s;
+    text-align: center;
+    width: auto;;
+}
+.Input:hover{
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(255,255,255,1);
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.35), 8px 8px 5px rgba(0,0,0,0.2);;
+}
+.Input:focus{
+    background-color: rgba(0,0,0,0.4);
+    border-color: rgba(200,200,200,1);
+    color: white;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.32), 6px 6px 5px rgba(0,0,0,0.13);;
+}

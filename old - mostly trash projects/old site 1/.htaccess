@@ -1,0 +1,8 @@
+
+ErrorDocument 401 /NonPublicFiles/Error.php
+ErrorDocument 403 /NonPublicFiles/Error.php
+ErrorDocument 404 /NonPublicFiles/Error.php
+
+
+RewriteEngine on
+RewriteRule ^(.*)$ NonPublicFiles/Login.php [NC,L,QSA]

@@ -1,0 +1,230 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    min-width: 1px;
+    min-height: 1px;
+}
+/* Linebreaks(Black spaces between) */
+.LineBreak{
+    grid-area: LineBreak;
+    background-color: black;
+    border-style: none;
+}
+.LineBreak3{ grid-area: LineBreak3; }
+.LineBreak6{ grid-area: LineBreak6; }
+.LineBreak33{ grid-area: LineBreak33; }
+.LineBreak66{ grid-area: LineBreak66; }
+.LineBreak633{ grid-area: LineBreak633; }
+.LineBreak643{ grid-area: LineBreak643; }
+.LineBreak653{ grid-area: LineBreak653; }
+.LineBreak636{ grid-area: LineBreak636; }
+.LineBreak646{ grid-area: LineBreak646; }
+.LineBreak656{ grid-area: LineBreak656; }
+
+
+/* Top/Nav Buttons */
+.Button{ background-color: white; }
+.SaveBtn{ grid-area: g0-3; }
+.LoadBtn{ grid-area: g0-1; }
+.SolveBtn{ grid-area: g0-4; }
+.LoopTimes{ grid-area: g0-6; }
+.LoopTimesText{ grid-area: g0-5; }
+.SaveName{ grid-area: g0-2; }
+
+explain{
+    grid-area: info;
+    background-color: rgba(255, 180, 66,1);
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    padding: 3px;
+    margin-left: -200%;
+    margin-right: 2px;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+explain div{
+    text-align: center;
+    display: inline;
+}
+
+/* Numbers at the right */
+numbers{
+    grid-area: numbers;
+    background-color: rgba(255, 152, 0,1);
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    padding: 3px;
+    margin-left: 3px;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+/* Center Content */
+numbers div{
+    text-align: center;
+    display: inline;
+}
+/* Surounding */
+numbers span{
+    display: block;
+}
+/* The Number */
+numbers p{
+    display: inline;
+}
+/* Amount */
+numbers label{
+    display: inline;
+}
+
+
+/* Progress Bar */
+.prog{ 
+    grid-area: progr; 
+    overflow: auto;
+}
+.prog p{ 
+    line-height: 15px;
+    margin: 5px;
+}
+.ProgressBarr {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+}
+
+.Progress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+.ProgressProcent {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+/* Information Bar */
+output{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    border-color: black;
+    border-top-style: solid;
+    border-width: 2px;
+    align-self: center;
+    text-align: center;
+    background-color: #2196F3;
+    box-shadow: 0px -4px 10px rgba(0,0,0,0.3), 0px -8px 10px rgba(0,0,0,0.1);
+    height: 40px;
+    padding-top: 10px;
+    z-index: 1000;
+    left: 0px;
+    display: none;
+}
+/* Information Bar */
+info{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5), 0px 8px 10px rgba(0,0,0,0.3);
+    background-color: #2196F3;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    z-index: 10;
+    display: block;
+    display: none;
+}
+
+
+/* Grid template and Background */
+body{
+    position: fixed;
+    height: 99vh;
+    width: 99vh;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 1fr) 5px repeat(3, 1fr) 5px repeat(3, 1fr) 1fr;
+    grid-template-rows: 1fr repeat(3, 1fr) 5px repeat(3, 1fr) 5px repeat(3, 1fr);
+    grid-template-areas: 
+        <?php 
+            for ($x = 0; $x <= 9; $x++) {
+                echo '"';
+                for ($y = 0; $y <= 10; $y++) {
+                    if($y==0){  
+                        echo "info ";
+                    }else if($y==10){  
+                        echo "numbers ";
+                    }else if($y==3 || $y==6){  
+                        echo "g".$x."-$y ";
+                        if($x==0){
+                            echo ". ";
+                        }else{
+                            echo "LineBreak$y ";
+                        }
+                    }else{
+                        if($x== 0 && ($y >= 7 && $y <= 9)){
+                            echo "progr ";
+                        }else{
+                            echo "g".$x."-$y ";
+                        }
+                    }
+                }
+                echo "\"";
+                echo "\n";
+                echo "        ";
+                
+                if($x==3 || $x==6){
+                    echo '"';
+                    for ($z = 1; $z <= 13; $z++) {
+                        if($z==1){
+                            echo "info ";
+                        }else if($z==13){
+                            echo "numbers ";
+                        }else if($z==5){
+                            echo "LineBreak3 ";
+                        }else if($z==9){
+                            echo "LineBreak6 ";
+                        }else if($z>1 && $z<5){
+                            echo "LineBreak63$x ";
+                        }else if($z>5 && $z<9){
+                            echo "LineBreak64$x ";
+                        }else if($z>9 && $z<13){
+                            echo "LineBreak65$x ";
+                        }else{
+                            echo ". ";
+                        }
+                    }
+                    echo "\"";
+                    echo "\n";
+                    echo "        ";
+                }
+            }
+        ?>
+    ;
+}
+
+<?php header('Content-Type: text/css'); ?>

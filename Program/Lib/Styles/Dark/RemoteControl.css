@@ -1,0 +1,42 @@
+.Selector td, th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.8);
+    padding: 8px;
+    color: rgba(255,255,255,1);
+}
+.Selector a{
+    cursor: pointer;
+    text-decoration: none;
+}.SelectorID{
+    background-color: rgba(40,40,40,1);
+    width: 22px;
+}.SelectorIP{
+    background-color: rgba(40,40,40,1);
+    width: 105px;
+}.SelectorUPDATED{
+    background-color: rgba(40,40,40,1);
+    width: 155px;
+}.SelectorRUNNING{
+    background-color: rgba(0,0,0,1);
+    width: 60px;
+}.SelectorDONE{
+    background-color: rgba(0,0,0,1);
+    width: 40px;
+}.SelectorCOMMAND{
+    background-color: rgba(40,0,40,1);
+    width: 100px;
+    max-width: 300px;
+    overflow-y: auto;
+}.SelectorOUTPUT{
+    background-color: rgba(40,0,40,1);
+    height: 50px;
+}.SelectorOUTPUT div{
+    height: 60px;
+    max-height: 450px;
+    overflow-y: auto;
+}.SelectorRED{
+    background-color: rgba(100,20,20,1);
+}.SelectorGREEN{
+    background-color: rgba(20,100,20,1);
+}

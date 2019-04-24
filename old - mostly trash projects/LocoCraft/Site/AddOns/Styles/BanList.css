@@ -1,0 +1,27 @@
+.BanList table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.BanList td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.BanList tr:nth-child(even) {
+    background-color: rgba( 200, 200, 200, 0.7);
+    color: black;
+    text-shadow: -1.2px 1.2px white, -1.2px 1.2px white;
+}
+
+.BanList tr{
+    color: white;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+    background-color: rgba( 100, 100, 100, 0.7);
+}
+
+.BanList div{
+    width: 100%;
+}

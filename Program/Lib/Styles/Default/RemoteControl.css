@@ -1,0 +1,84 @@
+
+.RemoteInput{
+    border-style: none;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.2), -4px -4px 3px rgba(0,0,0,0.2), 4px -4px 3px rgba(0,0,0,0.2), -4px 4px 3px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.15);
+}
+
+
+.Selectortable {
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-spacing: 0px 3px;
+    border-collapse: separate;
+}
+.Selector td, th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.8);
+    padding: 8px;
+    color: rgba(255,255,255,1);
+}
+.Selector tr:nth-child(even) {
+    background-color: rgba( 200, 200, 200, 0.7);
+    color: black;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+}
+.Selector tr{
+    color: white;
+    text-shadow: -1.2px 1.2px black, -1.2px 1.2px black;
+    background-color: rgba( 100, 100, 100, 0.7);
+    text-align: center;
+    transition-duration: 0.8s;
+}
+.Selector a{
+    cursor: pointer;
+    text-decoration: none;
+}.SelectorID{
+    opacity: 0.8;
+    background-color: #3f51b5;
+    width: 22px;
+}.SelectorIP{
+    opacity: 0.8;
+    background-color: #3f51b5;
+    width: 105px;
+}.SelectorUPDATED{
+    opacity: 0.8;
+    background-color: #3f51b5;
+    width: 155px;
+}.SelectorRUNNING{
+    opacity: 0.8;
+    background-color: #00ffff;
+    width: 60px;
+}.SelectorDONE{
+    opacity: 0.8;
+    background-color: #00ffff;
+    width: 40px;
+}.SelectorCOMMAND{
+    opacity: 0.8;
+    background-color: #2196F3;
+    width: 100px;
+    max-width: 300px;
+    overflow-y: auto;
+}.SelectorOUTPUT{
+    opacity: 0.8;
+    background-color: #2196F3;
+    height: 50px;
+}.SelectorOUTPUT div{
+    height: 60px;
+    max-height: 450px;
+    overflow-y: auto;
+}.SelectorRED{
+    background-color: #f44336;
+}.SelectorGREEN{
+    background-color: #4CAF50;
+}
+.Clickable{
+    color: green;
+}
+.Waiting{
+    background-color: red !important;
+    color: red !important;
+    font-family: Serif;
+    opacity: 0.2;
+}

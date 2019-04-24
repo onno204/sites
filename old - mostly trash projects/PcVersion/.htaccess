@@ -1,0 +1,25 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^pc\.onno204\.nl\.eu\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pc\.onno204\.nl\.eu\.org$
+RewriteRule ^/?$ "https\:\/\/www\.onno204\.nl\.eu\.org\/PcVersion\/" [R=301,L]
+
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 176.58.113.147
+deny from 66.175.0.0
+deny from 106.187.89.25
+deny from 81.95.144.42
+deny from 54.0.0.0
+deny from 122.248.253.138
+deny from 185.112.103.187
+deny from 96.126.120.145
+deny from 91.200.0.0
+deny from 185.112.0.0
+deny from 172.64.0.0
+deny from 183.97.254.84

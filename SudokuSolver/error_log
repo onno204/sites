@@ -1,0 +1,2 @@
+[23-Oct-2017 14:01:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/onno204nleu/public_html/SudokuSolver/Lib/style.css:206) in /home/onno204nleu/public_html/SudokuSolver/Lib/style.css on line 230
+[24-Oct-2017 16:11:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/onno204nleu/public_html/SudokuSolver/Lib/style.css:206) in /home/onno204nleu/public_html/SudokuSolver/Lib/style.css on line 230

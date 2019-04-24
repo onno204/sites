@@ -1,0 +1,62 @@
+This is my new theme for MyBB, he himself called a "JAMPS - Black & Green V2" style created for Mybb 1.8.
+The theme is the new version of the original with a similar name, in this case it was recreated from scratch and fully optimized, among its changes as many images per CSS code were replaced, buttons like most settings are made CSS, this theme to be made 100% in CSS, it is super light in his charge, and easy to modify to taste of each person.
+
+Translated with Google.
+
+Support for the theme is given in the following sites in this order of priority:
+
+http://www.MyBB-Es.com
+http://www.JAMPS.com.ar
+http://www.JAMPS.org
+http://www.JAMPS.net
+
+The theme is licensed CC BY-NC
+
+Theme created by XEDE
+http://steamcommunity.com/id/edexede
+https://www.facebook.com/EDEXEDE
+Webs:
+http://www.JAMPS.com.ar
+http://www.JAMPS.org
+https://www.facebook.com/JAMPS.com.ar
+http://steamcommunity.com/groups/jamps
+Host Web:
+http://www.NunHost.com
+
+
+instructions:
+Upload your forum the "JAMPS-Black-Green-V2-By-XEDE" folder inside the "IMAGES" folder
+Go to your ACP and select the option "Import a Style" select "JAMPS - Black & Green V2.xml".
+
+If compatibility error select the option "Ignore Version Compatibility" when they get the theme.
+
+
+*************************************************
+
+Este es mi nuevo theme para MyBB, el mismo lo denomine "JAMPS - Black & Green V2", estilo creado para Mybb 1.8. 
+El theme es la nueva versión del original con similar nombre, en este caso el mismo fue recreado desde cero y optimizado completamente, entre sus cambios se reemplazaron la mayor cantidad posible de imágenes por código CSS, los botones como la mayoría de las opciones están realizadas con CSS,este theme al ser realizado 100% en CSS, el mismo es súper liviano en su carga, como fácil de modificar a gusto de cada persona.
+
+El soporte para el theme se da en las siguientes webs en este orden de prioridad:
+http://www.MyBB-Es.com
+http://www.JAMPS.com.ar
+http://www.JAMPS.org
+http://www.JAMPS.net
+
+El tema cuenta con licencia CC BY-NC
+
+Tema creado por XEDE
+http://steamcommunity.com/id/edexede
+https://www.facebook.com/EDEXEDE
+Webs:
+http://www.JAMPS.com.ar
+http://www.JAMPS.org
+https://www.facebook.com/JAMPS.com.ar
+http://steamcommunity.com/groups/jamps
+Host Web:
+http://www.NunHost.com
+
+Instrucciones:
+Subir la carpeta "JAMPS-Black-Green-V2-By-XEDE" a tu foro, dentro de la carpeta "IMAGES"
+Ir a tu ACP y seleccionar la opcion "Importar un Estilo" seleccionar el archivo  "JAMPS - Black & Green V2.xml".
+
+En caso de error de compatibilidad seleccionar la opcion " Ignorar compatibilidad de versión" cuando suben el theme.

@@ -1,0 +1,63 @@
+body{
+    background-image: url("../images/GTAVinCar.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left bottom;
+    min-height: 97.6vh;
+    min-width: 99vw;
+}
+.layout{
+    line-height: 0px;
+}
+.map{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    position: fixed;
+    bottom: 1.6vh;
+    left: 1vw;
+    width: 14.48vw;
+    height: 19.4vh;
+    display: flex;
+}
+.map-NoHealthArmor{
+    position: absolute;
+    width: inherit;
+    height: 17.3vh;
+}
+.map-status{
+    background-color: rgba(204,50,50,0.5);
+    height: 1.5vh;
+    transform: translate(0%,100%);
+    width: inherit;
+    align-self: flex-end;
+    font-size: 0px;
+}
+.map-status-water{
+    background-color: rgba(12,152,241,0.5);
+    display: inline-block;
+    width: 50%;
+    height: inherit;
+}
+.map-status-food{
+    background-color: rgba(255,193,117,0.5);
+    display: inline-block;
+    width: 50%;
+    height: inherit;
+}
+
+.map-NoHealthArmor-carinfo{
+    background-color: rgba(204,50,50,0.5);
+    position: absolute;
+    width: 4.8vw;
+    height: inherit;
+    right: 0px;
+    font-size: 100%;
+    line-height: 100%;
+    color: white;
+}
+.map-NoHealthArmor-carinfo-info{
+    background-color: rgba(0,0,0,0.5);
+    width: inherit;
+    height: 25%;
+}
+

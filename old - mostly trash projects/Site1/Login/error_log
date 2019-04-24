@@ -1,0 +1,49 @@
+[22-Oct-2017 11:58:26 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:58:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[22-Oct-2017 11:58:26 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:58:26 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:58:26 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:58:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8
+[22-Oct-2017 11:59:50 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:59:50 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[22-Oct-2017 11:59:50 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:59:50 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[22-Oct-2017 11:59:50 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[22-Oct-2017 11:59:50 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8
+[24-Oct-2017 16:16:21 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[24-Oct-2017 16:16:21 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:21 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:21 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:21 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8
+[24-Oct-2017 16:16:23 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[24-Oct-2017 16:16:23 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:23 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:23 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:23 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8
+[24-Oct-2017 16:16:24 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:24 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:24 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/login.php on line 19
+[24-Oct-2017 16:16:24 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/Login/login.php on line 25
+[24-Oct-2017 16:16:24 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:24 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:26 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[24-Oct-2017 16:16:26 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:26 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:26 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:26 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8
+[24-Oct-2017 16:16:29 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:29 UTC] PHP Notice:  Undefined index: username in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 65
+[24-Oct-2017 16:16:29 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/login.php on line 19
+[24-Oct-2017 16:16:29 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/Login/login.php on line 25
+[24-Oct-2017 16:16:29 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:29 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:29 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:35 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 60
+[24-Oct-2017 16:16:35 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:35 UTC] PHP Warning:  mysqli_connect(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 58
+[24-Oct-2017 16:16:35 UTC] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50636 Library:100113 in /home/onno204nleu/public_html/Site1/AddOns/PhP/Utils.php on line 27
+[24-Oct-2017 16:16:35 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /home/onno204nleu/public_html/Site1/Login/LoginPage.php on line 8

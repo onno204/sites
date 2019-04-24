@@ -1,0 +1,23 @@
+
+.LoginForm ul li{
+    list-style: none;
+}
+.LoginForm ul li a{
+    transition-duration: 0.7s;
+    text-decoration: none;
+    color: rgba(10,10,150,1);
+}
+.LoginForm ul li a:hover{
+    text-decoration: underline;
+    font-size: 18px; 
+    font-weight: bold;
+    color: rgba(60,60,200,1);
+}
+.LoginForm ul li a:visited{
+    color: rgba(10,10,150,1);
+}
+.LoginError{
+    font-size: x-large;
+    color: red;
+    font-weight: bold;
+}

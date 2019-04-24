@@ -1,0 +1,7 @@
+AuthName "school.onno204.nl statistics"
+AuthType Basic
+AuthUserFile /home/admin/domains/school.onno204.nl/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
