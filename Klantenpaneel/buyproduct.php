@@ -1,15 +1,13 @@
 <?php 
-    require "config.php";
-    if(isUserLoggedIn() == false){
-        die("<h1>Je moet ingelogged zijn voor deze actie!</h1><a href=\"login\">Login</a>");
-    }
-    
-    if(doesUserHavePermission("buyproduct") == false){
-        die("<h1>You don't have permission to view this page</h1>");
-    }
+require_once "config.php";
+doesUserHavePermission("buyproduct", true, true);
+
+
+require_once "includes/header.php";
+require_once "includes/nav.php";
 ?>
 
-<h1>buy products</h1>
+<h1>Product bestellen</h1>
 
 <style>
 table {
@@ -28,7 +26,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
-<?php include "nav.php"; 
+<?php
 
 if(isset($_GET['productid'])){
     $stmt = $conn->prepare("SELECT * FROM products WHERE disabled != 1 AND id = ? LIMIT 1");
@@ -43,8 +41,6 @@ if(isset($_GET['productid'])){
     }
 }
 
-
-
 $stmt = $conn->prepare("SELECT * FROM category WHERE disabled != 1");
 $stmt->execute();
 $result = $stmt->get_result();
@@ -55,10 +51,10 @@ while ($data = $result->fetch_assoc()){
     
     <table id="producten">
         <tr>
-            <th>title</th>
-            <th>description</th>
-            <th>price</th>
-            <th>buy</th>
+            <th>Titel</th>
+            <th>Omschrijving</th>
+            <th>Prijs</th>
+            <th></th>
         </tr>
         <?php
             $stmt = $conn->prepare("SELECT * FROM products WHERE disabled != 1 AND categoryid = ?");
@@ -71,7 +67,7 @@ while ($data = $result->fetch_assoc()){
                     <th><?php echo $data2['title']; ?></th>
                     <th><?php echo $data2['description']; ?></th>
                     <th><?php echo $data2['price']; ?></th>
-                    <th><a href="buyproduct?productid=<?php echo $data2['id']; ?>">KOPEN</a></th>
+                    <th><a href="buyproduct?productid=<?php echo $data2['id']; ?>">Bestellen</a></th>
                 </tr>
                 <?php
             }
@@ -83,7 +79,7 @@ while ($data = $result->fetch_assoc()){
     
 }
 
-
+require_once "includes/footer.php";
 
 
 
